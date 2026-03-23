@@ -610,6 +610,12 @@
       <span class="section-meta" id="section-meta"></span>
     </div>
     <div class="cards-grid" id="cards-grid"></div>
+    <div id="load-more-wrap" style="text-align:center;margin-top:40px;display:none;">
+      <button id="load-more-btn" onclick="carregarMais()" style="background:var(--blue);color:#fff;border:none;padding:14px 40px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;font-family:'Sora',sans-serif;transition:background 0.2s;" onmouseover="this.style.background='#2454B8'" onmouseout="this.style.background='var(--blue)'">
+        Carregar mais
+      </button>
+      <div id="load-more-info" style="font-size:13px;color:var(--text-muted);margin-top:10px;"></div>
+    </div>
   </div>
 
   <!-- ARTIGO COMPLETO -->
@@ -684,15 +690,22 @@ function updateCounts() {
   });
 }
 
+const POR_PAGINA = 9;
+let paginaAtual = 0;
+let postsAtuais = [];
+
 function switchTab(tab, el) {
   currentTab = tab;
+  paginaAtual = 0;
+  postsAtuais = [];
   document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
   el.classList.add('active');
   showList();
 }
 
 function showList() {
-  const posts = POSTS.filter(p => p.categoria === currentTab);
+  postsAtuais = POSTS.filter(p => p.categoria === currentTab);
+  paginaAtual = 0;
   const meta = catLabels[currentTab];
 
   document.getElementById('list-view').style.display = 'block';
@@ -703,16 +716,32 @@ function showList() {
   document.getElementById('section-title').innerHTML =
     meta.title + ' <span>' + meta.sub + '</span>';
   document.getElementById('section-meta').textContent =
-    posts.length + ' publicaç' + (posts.length === 1 ? 'ão' : 'ões');
+    postsAtuais.length + ' publicaç' + (postsAtuais.length === 1 ? 'ão' : 'ões');
 
   const grid = document.getElementById('cards-grid');
-  if (posts.length === 0) {
+  if (postsAtuais.length === 0) {
     grid.innerHTML = '<div class="empty"><svg width="48" height="48" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" stroke="#ccc" stroke-width="2" fill="none"/></svg><p>Nenhum conteúdo publicado ainda.</p></div>';
+    document.getElementById('load-more-wrap').style.display = 'none';
     return;
   }
 
-  grid.innerHTML = posts.map((p, i) => `
-    <div class="card" onclick="openPost(${p.id})" style="animation-delay:${(i*0.07)+0.05}s">
+  grid.innerHTML = '';
+  renderCards();
+}
+
+function renderCards() {
+  const meta = catLabels[currentTab];
+  const inicio = paginaAtual * POR_PAGINA;
+  const fim = inicio + POR_PAGINA;
+  const lote = postsAtuais.slice(inicio, fim);
+  const grid = document.getElementById('cards-grid');
+
+  lote.forEach((p, i) => {
+    const div = document.createElement('div');
+    div.className = 'card';
+    div.style.animationDelay = (i * 0.07 + 0.05) + 's';
+    div.onclick = () => openPost(p.id);
+    div.innerHTML = `
       ${p.imagem && p.imagem.trim() !== ''
         ? `<img src="${p.imagem}" alt="${p.titulo}" class="card-img">`
         : `<div class="card-img-placeholder">
@@ -734,8 +763,31 @@ function showList() {
           <span class="card-read">Ler mais →</span>
         </div>
       </div>
-    </div>
-  `).join('');
+    `;
+    grid.appendChild(div);
+  });
+
+  paginaAtual++;
+  const exibidos = Math.min(paginaAtual * POR_PAGINA, postsAtuais.length);
+  const restantes = postsAtuais.length - exibidos;
+  const wrap = document.getElementById('load-more-wrap');
+  const info = document.getElementById('load-more-info');
+
+  if (restantes > 0) {
+    wrap.style.display = 'block';
+    info.textContent = `Exibindo ${exibidos} de ${postsAtuais.length} publicações`;
+  } else {
+    wrap.style.display = 'none';
+  }
+}
+
+function carregarMais() {
+  renderCards();
+  // Scroll suave até os novos cards
+  const grid = document.getElementById('cards-grid');
+  const novos = grid.querySelectorAll('.card');
+  const alvo = novos[novos.length - POR_PAGINA];
+  if (alvo) alvo.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function openPost(id) {
