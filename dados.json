@@ -1,6 +1,17 @@
 {
   "posts": [
     {
+      "id": 3,
+      "titulo": "Justiça suspende cobrança de ICMS sobre energia solar de consumidor no RN",
+      "resumo": "Consumidor de Baraúna conseguiu decisão judicial que suspende ICMS sobre energia gerada pelo próprio sistema solar. Entenda o que isso significa para quem tem painéis no RN.",
+      "conteudo": "<p>Uma decisão judicial inédita no Rio Grande do Norte trouxe um precedente importante para quem possui sistema de energia solar no estado. Um consumidor do município de Baraúna, no Oeste potiguar, conseguiu na Justiça a suspensão da cobrança de ICMS sobre a energia produzida pelo seu próprio sistema fotovoltaico.</p><h2>O que aconteceu</h2><p>O juiz João Makson Bastos de Oliveira, do Juizado Especial Cível, Criminal e da Fazenda Pública da Comarca de Baraúna, entendeu que quem produz a própria energia e utiliza o sistema de compensação com a distribuidora não deve pagar imposto sobre valores que não representam consumo efetivo.</p><p>A ação foi movida contra o Estado do Rio Grande do Norte e a Neoenergia Cosern. O autor é titular de quatro unidades consumidoras com sistema de microgeração solar, todas operando no regime de compensação previsto em lei.</p><h2>O problema identificado</h2><p>Mesmo gerando parte da própria energia, o consumidor pagava ICMS não apenas pelo que consumia da rede elétrica, mas também pela energia que seu sistema injetava na rede e que era compensada posteriormente nas faturas — uma cobrança que o juiz considerou indevida.</p><h2>O fundamento da decisão</h2><p>Segundo o magistrado, no modelo de microgeração distribuída o consumidor também atua como produtor de energia, o que afasta a característica de circulação de mercadoria necessária para a incidência do ICMS. A decisão leva em conta ainda as alterações promovidas pela Lei Complementar nº 194/2022 — a chamada Lei Kandir —, que afastou a cobrança de ICMS sobre serviços de transmissão e distribuição de energia elétrica.</p><p>Com isso, foi determinada a suspensão da cobrança do imposto sobre a TUSD e demais encargos relacionados à energia injetada e compensada pelas unidades consumidoras, com multa diária em caso de descumprimento.</p><h2>O que isso significa para você</h2><p>A decisão tem caráter provisório e o processo segue em tramitação, mas abre um caminho importante. Se você possui sistema solar no RN e acredita estar sendo cobrado indevidamente, vale consultar um advogado tributarista para avaliar o seu caso. Decisões como essa fortalecem os direitos de quem investiu em energia limpa e contribui para a redução da dependência da rede elétrica.</p><p><em>Fonte: G1 Rio Grande do Norte — g1.globo.com/rn</em></p>",
+      "categoria": "noticias",
+      "imagem": "https://imgur.com/01eCv61.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "23 de mar. de 2025"
+    },
+    {
       "id": 2,
       "titulo": "Energia solar e Imposto de Renda: você sabia que pode economizar na venda do seu imóvel?",
       "resumo": "Quem instalou energia solar pode incluir o investimento como melhoria no IR e economizar no ganho de capital na venda do imóvel. Entenda como.",
@@ -23,5 +34,5 @@
       "data": "23 de mar. de 2025"
     }
   ],
-  "atualizadoEm": "2026-03-23T19:47:29.639Z"
+  "atualizadoEm": "2026-03-23T19:53:37.550Z"
 }
