@@ -516,10 +516,48 @@
     .cards-grid { grid-template-columns: repeat(2, 1fr); }
     .hero h1 { font-size: 28px; }
   }
+
   @media (max-width: 600px) {
     .cards-grid { grid-template-columns: 1fr; }
-    .header-inner { padding: 0 16px; }
-    main { padding: 32px 16px 60px; }
+
+    .header-inner { padding: 0 12px; }
+    .header-cta { padding: 8px 14px; font-size: 12px; }
+    .logo img { height: 36px; }
+
+    .hero { padding: 36px 20px 32px; }
+    .hero h1 { font-size: 24px; }
+    .hero p { font-size: 14px; }
+
+    .tabs { padding: 0 8px; gap: 0; }
+    .tab { padding: 14px 12px 12px; font-size: 13px; gap: 5px; }
+
+    main { padding: 24px 16px 60px; }
+
+    .section-title { font-size: 20px; }
+    .section-header { flex-direction: column; gap: 4px; }
+
+    .article-view { max-width: 100%; }
+    .article-header { max-width: 100%; }
+    .article-title { font-size: 24px; }
+    .article-meta { flex-direction: column; gap: 6px; font-size: 12px; }
+
+    .article-img { max-height: 240px; }
+    .article-img-placeholder { height: 200px; }
+
+    .article-content {
+      font-size: 16px;
+      line-height: 1.75;
+      max-width: 100%;
+    }
+
+    .article-content h2 {
+      font-size: 17px;
+      margin: 28px 0 10px;
+    }
+
+    .back-btn { margin-bottom: 24px; }
+
+    .ad-slot { height: 60px; font-size: 11px; }
   }
 </style>
 </head>
