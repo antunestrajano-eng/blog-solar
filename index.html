@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confiance Energy — Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --blue: #1A3F8F;
+    --blue-light: #2454B8;
+    --blue-faint: #EEF3FC;
+    --gold: #F5A800;
+    --gold-light: #FFD166;
+    --orange: #F07B00;
+    --text: #0F1F45;
+    --text-muted: #5A6480;
+    --border: #E2E8F4;
+    --white: #ffffff;
+    --bg: #F7F9FD;
+    --radius: 14px;
+    --shadow: 0 2px 16px rgba(26,63,143,0.08);
+    --shadow-hover: 0 8px 32px rgba(26,63,143,0.16);
+  }
+
+  body {
+    font-family: 'Sora', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  header {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(26,63,143,0.07);
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+  }
+
+  .logo-text span:first-child {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue);
+    letter-spacing: -0.3px;
+  }
+
+  .logo-text span:last-child {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--gold);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+
+  .header-cta {
+    background: var(--blue);
+    color: var(--white);
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: background 0.2s;
+  }
+  .header-cta:hover { background: var(--blue-light); }
+
+  /* ── HERO STRIP ── */
+  .hero {
+    background: linear-gradient(135deg, var(--blue) 0%, #0F2660 100%);
+    padding: 56px 32px 48px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(245,168,0,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -40px;
+    width: 250px; height: 250px;
+    background: radial-gradient(circle, rgba(245,168,0,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(245,168,0,0.15);
+    border: 1px solid rgba(245,168,0,0.3);
+    color: var(--gold-light);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-family: 'Lora', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 14px;
+    position: relative;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+
+  .hero p {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── TABS ── */
+  .tabs-wrap {
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 72px;
+    z-index: 90;
+  }
+
+  .tabs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    display: flex;
+    gap: 4px;
+  }
+
+  .tab {
+    padding: 18px 24px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+  }
+
+  .tab:hover { color: var(--blue); }
+
+  .tab.active {
+    color: var(--blue);
+    border-bottom-color: var(--gold);
+  }
+
+  .tab-count {
+    background: var(--blue-faint);
+    color: var(--blue);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 20px;
+    transition: all 0.2s;
+  }
+
+  .tab.active .tab-count {
+    background: var(--gold);
+    color: var(--white);
+  }
+
+  /* ── MAIN ── */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 32px 80px;
+  }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+
+  .section-title {
+    font-family: 'Lora', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .section-title span {
+    color: var(--gold);
+  }
+
+  .section-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* ── GRID ── */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  /* ── CARD ── */
+  .card {
+    background: var(--white);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: transform 0.25s, box-shadow 0.25s;
+    animation: fadeUp 0.4s ease both;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .card:nth-child(1) { animation-delay: 0.05s; }
+  .card:nth-child(2) { animation-delay: 0.10s; }
+  .card:nth-child(3) { animation-delay: 0.15s; }
+  .card:nth-child(4) { animation-delay: 0.20s; }
+  .card:nth-child(5) { animation-delay: 0.25s; }
+  .card:nth-child(6) { animation-delay: 0.30s; }
+
+  .card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background: linear-gradient(135deg, var(--blue-faint), #dce6f8);
+  }
+
+  .card-img-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, var(--blue-faint) 0%, #dce6f8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-body {
+    padding: 22px 22px 20px;
+  }
+
+  .card-category {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+  }
+
+  .cat-noticias   { background: var(--blue-faint); color: var(--blue); }
+  .cat-informativos { background: #FFF6E6; color: #A06000; }
+  .cat-equipamentos { background: #E8F7EE; color: #1A6B3A; }
+
+  .card-title {
+    font-family: 'Lora', serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--text);
+    margin-bottom: 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-excerpt {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 18px;
+  }
+
+  .card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+
+  .card-date {
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .card-read {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* ── ARTICLE VIEW ── */
+  .article-view {
+    display: none;
+    animation: fadeUp 0.35s ease;
+  }
+
+  .article-view.active { display: block; }
+
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue);
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    margin-bottom: 36px;
+    transition: gap 0.2s;
+  }
+  .back-btn:hover { gap: 12px; }
+
+  .article-header {
+    max-width: 780px;
+    margin-bottom: 32px;
+  }
+
+  .article-category {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+  }
+
+  .article-title {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .article-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    gap: 20px;
+  }
+
+  .article-img {
+    width: 100%;
+    max-height: 440px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 40px;
+    border: 1px solid var(--border);
+  }
+
+  .article-img-placeholder {
+    width: 100%;
+    height: 360px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--blue-faint), #dce6f8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .article-content {
+    max-width: 720px;
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    line-height: 1.85;
+    color: #2A3550;
+  }
+
+  .article-content p { margin-bottom: 24px; }
+
+  /* ── EMPTY STATE ── */
+  .empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: var(--text-muted);
+  }
+  .empty svg { margin-bottom: 16px; opacity: 0.4; }
+  .empty p { font-size: 15px; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--blue);
+    color: rgba(255,255,255,0.65);
+    text-align: center;
+    padding: 28px 32px;
+    font-size: 13px;
+  }
+  footer strong { color: var(--gold-light); }
+
+  /* ── AD SLOT ── */
+  .ad-slot {
+    background: var(--white);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 12px;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 900px) {
+    .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero h1 { font-size: 28px; }
+  }
+  @media (max-width: 600px) {
+    .cards-grid { grid-template-columns: 1fr; }
+    .header-inner { padding: 0 16px; }
+    main { padding: 32px 16px 60px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#" onclick="showList(); return false;">
+      <img src="https://i.imgur.com/jbGhPDi.jpg" alt="Confiance Energy" style="height:44px;width:auto;object-fit:contain;">
+      <div class="logo-text">
+        <span style="font-size:12px;font-weight:600;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Blog Solar</span>
+      </div>
+    </a>
+    <a class="header-cta" href="#">Solicitar Orçamento</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero" id="hero-section">
+  <h1>Tudo sobre energia solar <em>para você</em></h1>
+  <p>Notícias, informativos e equipamentos — conteúdo pensado para quem quer economizar e investir em energia limpa.</p>
+</div>
+
+<!-- TABS -->
+<div class="tabs-wrap" id="tabs-section">
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('noticias', this)">
+      📰 Notícias <span class="tab-count" id="count-noticias">0</span>
+    </button>
+    <button class="tab" onclick="switchTab('informativos', this)">
+      💡 Informativos <span class="tab-count" id="count-informativos">0</span>
+    </button>
+    <button class="tab" onclick="switchTab('dicas', this)">
+      💡 Dicas <span class="tab-count" id="count-dicas">0</span>
+    </button>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main>
+  <!-- AD SLOT (AdSense vai aqui) -->
+  <div class="ad-slot" id="ad-top" style="display:none">Espaço reservado para anúncio Google AdSense</div>
+
+  <!-- LISTA DE CARDS -->
+  <div id="list-view">
+    <div class="section-header">
+      <h2 class="section-title" id="section-title">Notícias <span>recentes</span></h2>
+      <span class="section-meta" id="section-meta"></span>
+    </div>
+    <div class="cards-grid" id="cards-grid"></div>
+  </div>
+
+  <!-- ARTIGO COMPLETO -->
+  <div class="article-view" id="article-view">
+    <button class="back-btn" onclick="showList()">← Voltar</button>
+    <div class="article-header">
+      <div class="article-category" id="art-category"></div>
+      <h1 class="article-title" id="art-title"></h1>
+      <div class="article-meta">
+        <span id="art-date"></span>
+        <span id="art-author"></span>
+      </div>
+    </div>
+    <div class="article-img-placeholder" id="art-img-wrap">
+      <svg width="64" height="64" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="7" fill="#F5A800" opacity=".5"/><rect x="20.5" y="2" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="20.5" y="34" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="2" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="34" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".4"/></svg>
+    </div>
+    <div class="article-content" id="art-content"></div>
+  </div>
+</main>
+
+<!-- AD SLOT RODAPÉ (AdSense) -->
+<div style="max-width:1200px;margin:0 auto;padding:0 32px 32px">
+  <div class="ad-slot">Espaço reservado para anúncio Google AdSense</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Confiance Energy</strong> — Blog Solar &nbsp;·&nbsp; Natal, RN &nbsp;·&nbsp; © 2025
+</footer>
+
+<script>
+// ── CONFIGURAÇÃO — ajuste para o seu repositório ──
+const DADOS_URL = 'dados.json'; // em produção: URL raw do GitHub
+
+let POSTS = [];
+let currentTab = 'noticias';
+
+// ── CARREGA OS POSTS DO DADOS.JSON ──
+async function carregarPosts() {
+  try {
+    const resp = await fetch(DADOS_URL + '?v=' + Date.now());
+    if (!resp.ok) throw new Error('Arquivo não encontrado');
+    const data = await resp.json();
+    POSTS = data.posts || [];
+  } catch(e) {
+    // Fallback: dados de exemplo enquanto o JSON não existe
+    POSTS = [
+      {
+        id: 1, categoria: "noticias",
+        titulo: "Bem-vindo ao Blog da Confiance Energy!",
+        resumo: "Este é um post de exemplo. Configure o Google Sheets e publique suas primeiras notícias.",
+        conteudo: "<p>Configure o Google Sheets e o Apps Script conforme o guia de instalação. Após publicar seu primeiro post, ele aparecerá aqui automaticamente.</p>",
+        data: "20 Mar 2025", autor: "Redação Confiance", imagem: ""
+      }
+    ];
+  }
+  updateCounts();
+  showList();
+}
+let currentPost = null;
+
+const catLabels = {
+  noticias: { label: 'Notícia', cls: 'cat-noticias', title: 'Notícias', sub: 'recentes' },
+  informativos: { label: 'Informativo', cls: 'cat-informativos', title: 'Informativos', sub: 'e guias' },
+  dicas: { label: 'Dica', cls: 'cat-equipamentos', title: 'Dicas', sub: 'e tutoriais' }
+};
+
+function updateCounts() {
+  ['noticias','informativos','dicas'].forEach(cat => {
+    document.getElementById('count-' + cat).textContent =
+      POSTS.filter(p => p.categoria === cat).length;
+  });
+}
+
+function switchTab(tab, el) {
+  currentTab = tab;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  showList();
+}
+
+function showList() {
+  const posts = POSTS.filter(p => p.categoria === currentTab);
+  const meta = catLabels[currentTab];
+
+  document.getElementById('list-view').style.display = 'block';
+  document.getElementById('article-view').classList.remove('active');
+  document.getElementById('hero-section').style.display = '';
+  document.getElementById('ad-top').style.display = '';
+
+  document.getElementById('section-title').innerHTML =
+    meta.title + ' <span>' + meta.sub + '</span>';
+  document.getElementById('section-meta').textContent =
+    posts.length + ' publicaç' + (posts.length === 1 ? 'ão' : 'ões');
+
+  const grid = document.getElementById('cards-grid');
+  if (posts.length === 0) {
+    grid.innerHTML = '<div class="empty"><svg width="48" height="48" viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" stroke="#ccc" stroke-width="2" fill="none"/></svg><p>Nenhum conteúdo publicado ainda.</p></div>';
+    return;
+  }
+
+  grid.innerHTML = posts.map((p, i) => `
+    <div class="card" onclick="openPost(${p.id})" style="animation-delay:${(i*0.07)+0.05}s">
+      <div class="card-img-placeholder">
+        <svg width="48" height="48" viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="7" fill="#F5A800" opacity=".6"/>
+          <rect x="20.5" y="2" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".5"/>
+          <rect x="20.5" y="34" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".5"/>
+          <rect x="2" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".5"/>
+          <rect x="34" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".5"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <span class="card-category ${meta.cls}">${meta.label}</span>
+        <div class="card-title">${p.titulo}</div>
+        <div class="card-excerpt">${p.resumo}</div>
+        <div class="card-footer">
+          <span class="card-date">📅 ${p.data}</span>
+          <span class="card-read">Ler mais →</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openPost(id) {
+  const p = POSTS.find(x => x.id === id);
+  if (!p) return;
+  const meta = catLabels[p.categoria];
+
+  document.getElementById('list-view').style.display = 'none';
+  document.getElementById('hero-section').style.display = 'none';
+  document.getElementById('ad-top').style.display = 'none';
+  document.getElementById('article-view').classList.add('active');
+
+  document.getElementById('art-category').textContent = meta.label;
+  document.getElementById('art-category').className = 'article-category ' + meta.cls;
+  document.getElementById('art-title').textContent = p.titulo;
+  document.getElementById('art-date').textContent = '📅 ' + p.data;
+  document.getElementById('art-author').textContent = '✍️ ' + p.autor;
+  document.getElementById('art-content').innerHTML = p.conteudo;
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// INIT
+carregarPosts();
+</script>
+</body>
+</html>
