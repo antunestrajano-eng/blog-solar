@@ -376,6 +376,7 @@
   .article-view {
     display: none;
     animation: fadeUp 0.35s ease;
+    max-width: 820px;
   }
 
   .article-view.active { display: block; }
@@ -397,7 +398,7 @@
   .back-btn:hover { gap: 12px; }
 
   .article-header {
-    max-width: 780px;
+    max-width: 820px;
     margin-bottom: 32px;
   }
 
@@ -449,7 +450,7 @@
   }
 
   .article-content {
-    max-width: 720px;
+    max-width: 820px;
     font-family: 'Lora', serif;
     font-size: 18px;
     line-height: 1.85;
@@ -673,15 +674,18 @@ function showList() {
 
   grid.innerHTML = posts.map((p, i) => `
     <div class="card" onclick="openPost(${p.id})" style="animation-delay:${(i*0.07)+0.05}s">
-      <div class="card-img-placeholder">
-        <svg width="48" height="48" viewBox="0 0 44 44" fill="none">
-          <circle cx="22" cy="22" r="7" fill="#F5A800" opacity=".6"/>
-          <rect x="20.5" y="2" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".5"/>
-          <rect x="20.5" y="34" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".5"/>
-          <rect x="2" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".5"/>
-          <rect x="34" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".5"/>
-        </svg>
-      </div>
+      ${p.imagem && p.imagem.trim() !== ''
+        ? `<img src="${p.imagem}" alt="${p.titulo}" class="card-img">`
+        : `<div class="card-img-placeholder">
+            <svg width="48" height="48" viewBox="0 0 44 44" fill="none">
+              <circle cx="22" cy="22" r="7" fill="#F5A800" opacity=".6"/>
+              <rect x="20.5" y="2" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".5"/>
+              <rect x="20.5" y="34" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".5"/>
+              <rect x="2" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".5"/>
+              <rect x="34" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".5"/>
+            </svg>
+          </div>`
+      }
       <div class="card-body">
         <span class="card-category ${meta.cls}">${meta.label}</span>
         <div class="card-title">${p.titulo}</div>
@@ -711,6 +715,13 @@ function openPost(id) {
   document.getElementById('art-date').textContent = '📅 ' + p.data;
   document.getElementById('art-author').textContent = '✍️ ' + p.autor;
   document.getElementById('art-content').innerHTML = p.conteudo;
+
+  const imgWrap = document.getElementById('art-img-wrap');
+  if (p.imagem && p.imagem.trim() !== '') {
+    imgWrap.innerHTML = `<img src="${p.imagem}" alt="${p.titulo}" class="article-img">`;
+  } else {
+    imgWrap.innerHTML = `<div class="article-img-placeholder"><svg width="64" height="64" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="7" fill="#F5A800" opacity=".5"/><rect x="20.5" y="2" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="20.5" y="34" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="2" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="34" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".4"/></svg></div>`;
+  }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
