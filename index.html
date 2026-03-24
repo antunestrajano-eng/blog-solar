@@ -758,6 +758,7 @@ const DADOS_URL = 'dados.json'; // em produção: URL raw do GitHub
 
 let POSTS = [];
 let currentTab = 'noticias';
+let DATA_VERSION = Date.now().toString();
 
 // ── CARREGA OS POSTS DO DADOS.JSON ──
 async function carregarPosts() {
@@ -766,6 +767,7 @@ async function carregarPosts() {
     if (!resp.ok) throw new Error('Arquivo não encontrado');
     const data = await resp.json();
     POSTS = data.posts || [];
+    DATA_VERSION = data.atualizadoEm || Date.now().toString();
   } catch(e) {
     // Fallback: dados de exemplo enquanto o JSON não existe
     POSTS = [
@@ -777,6 +779,7 @@ async function carregarPosts() {
         data: "20 Mar 2025", autor: "Redação Confiance", imagem: ""
       }
     ];
+    DATA_VERSION = Date.now().toString();
   }
   updateCounts();
   // Só mostra a lista se não tiver hash de post na URL
@@ -938,7 +941,8 @@ function openPost(id) {
   // URL de compartilhamento aponta para a página de preview
   const slug = p.slug || (gerarSlug(p.titulo) + '--' + p.id);
   const hashUrl = '#/' + p.categoria + '/' + slug;
-  const shareUrl = window.location.origin + window.location.pathname.replace(/\/$/, '') + '/p/' + p.categoria + '/' + slug + '.html';
+  const shareUrlBase = window.location.origin + window.location.pathname.replace(/\/$/, '') + '/p/' + p.categoria + '/' + slug + '.html';
+  const shareUrl = shareUrlBase + '?v=' + encodeURIComponent(DATA_VERSION);
 
   _shareUrl = shareUrl;
   history.pushState({ postId: p.id }, p.titulo, hashUrl);
