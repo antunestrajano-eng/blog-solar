@@ -672,6 +672,9 @@
 
 <!-- MAIN -->
 <main>
+  <!-- AD SLOT (placeholder sem AdSense) -->
+  <div class="ad-slot" id="ad-top" style="display:none"></div>
+
   <!-- LISTA DE CARDS -->
   <div id="list-view">
     <div class="section-header">
@@ -738,6 +741,11 @@
     <div class="article-content" id="art-content"></div>
   </div>
 </main>
+
+<!-- AD SLOT RODAPÉ (placeholder sem AdSense) -->
+<div style="max-width:1200px;margin:0 auto;padding:0 32px 32px">
+  <div class="ad-slot" style="display:none"></div>
+</div>
 
 <!-- FOOTER -->
 <footer>
@@ -822,7 +830,8 @@ function showList() {
   document.getElementById('list-view').style.display = 'block';
   document.getElementById('article-view').classList.remove('active');
   document.getElementById('hero-section').style.display = '';
-  document.getElementById('ad-top').style.display = '';
+  const adTopEl = document.getElementById('ad-top');
+  if (adTopEl) adTopEl.style.display = '';
   document.title = 'Confiance Energy — Blog Solar';
   history.pushState(null, '', window.location.pathname);
 
@@ -920,7 +929,8 @@ function openPost(id) {
 
   document.getElementById('list-view').style.display = 'none';
   document.getElementById('hero-section').style.display = 'none';
-  document.getElementById('ad-top').style.display = 'none';
+  const adTopEl = document.getElementById('ad-top');
+  if (adTopEl) adTopEl.style.display = 'none';
   document.getElementById('article-view').classList.add('active');
 
   document.getElementById('art-category').textContent = meta.label;
