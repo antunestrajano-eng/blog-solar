@@ -760,6 +760,16 @@ async function carregarPosts() {
     ];
   }
   updateCounts();
+  // Só mostra a lista se não tiver hash de post na URL
+  const hash = window.location.hash;
+  const match = hash.match(/--(\d+)$/);
+  if (match) {
+    const id = parseInt(match[1]);
+    if (!isNaN(id) && POSTS.find(p => p.id === id)) {
+      openPost(id);
+      return;
+    }
+  }
   showList();
 }
 let currentPost = null;
@@ -975,7 +985,7 @@ window.addEventListener('popstate', (e) => {
 });
 
 // INIT
-carregarPosts().then(() => verificarHash());
+carregarPosts();
 </script>
 </body>
 </html>
