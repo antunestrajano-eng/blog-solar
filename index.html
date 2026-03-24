@@ -916,19 +916,24 @@ function openPost(id) {
   document.getElementById('art-author').textContent = '✍️ ' + p.autor;
   document.getElementById('art-content').innerHTML = p.conteudo;
 
-  // URL semântica: #/categoria/slug-do-titulo
-  const slug = gerarSlug(p.titulo);
-  const hash = '#/' + p.categoria + '/' + slug + '--' + p.id;
-  history.pushState({ postId: p.id }, p.titulo, hash);
+  // URL de compartilhamento aponta para a página de preview
+  const slug = p.slug || (gerarSlug(p.titulo) + '--' + p.id);
+  const hashUrl = '#/' + p.categoria + '/' + slug;
+  const shareUrl = window.location.origin + window.location.pathname.replace(/\/$/, '') + '/p/' + p.categoria + '/' + slug + '.html';
+
+  _shareUrl = shareUrl;
+  history.pushState({ postId: p.id }, p.titulo, hashUrl);
   document.title = p.titulo + ' — Confiance Energy';
 
-  // Share modal
-  const postUrl = window.location.origin + window.location.pathname + hash;
-  const texto = encodeURIComponent(p.titulo + '\n\n' + postUrl);
+  // Share modal — usa a URL de preview para WhatsApp/Instagram
+  const texto = encodeURIComponent(p.titulo + '\n\n' + shareUrl);
   document.getElementById('share-title-preview').textContent = p.titulo;
   document.getElementById('share-whatsapp').href = 'https://wa.me/?text=' + texto;
-  document.getElementById('share-instagram').href = '#';
-  document.getElementById('share-instagram').onclick = () => { copiarLink(); return false; };
+  document.getElementById('share-instagram').onclick = () => {
+    navigator.clipboard.writeText(shareUrl);
+    fecharShare();
+    return false;
+  };
 
   const imgWrap = document.getElementById('art-img-wrap');
   if (p.imagem && p.imagem.trim() !== '') {
@@ -948,8 +953,11 @@ function fecharShare(e) {
   document.getElementById('share-modal').style.display = 'none';
 }
 
+let _shareUrl = '';
+
 function copiarLink() {
-  navigator.clipboard.writeText(window.location.href).then(() => {
+  const url = _shareUrl || window.location.href;
+  navigator.clipboard.writeText(url).then(() => {
     const btn = document.getElementById('share-copy');
     btn.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Link copiado!`;
     btn.style.background = '#e6f9f0';
