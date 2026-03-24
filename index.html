@@ -3,7 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Confiance Energy — Blog</title>
+<title>Confiance Energy — Blog Solar</title>
+<meta name="description" content="Notícias, informativos e dicas sobre energia solar. Conteúdo especializado da Confiance Energy.">
+
+<!-- Open Graph / WhatsApp / Instagram -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Confiance Energy — Blog Solar">
+<meta property="og:title" content="Confiance Energy — Blog Solar">
+<meta property="og:description" content="Notícias, informativos e dicas sobre energia solar. Conteúdo especializado da Confiance Energy.">
+<meta property="og:image" content="https://i.imgur.com/jbGhPDi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://antunestrajano-eng.github.io/blog-solar/">
+
+<!-- Twitter/X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Confiance Energy — Blog Solar">
+<meta name="twitter:description" content="Notícias, informativos e dicas sobre energia solar.">
+<meta name="twitter:image" content="https://i.imgur.com/jbGhPDi.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
@@ -419,15 +436,54 @@
     font-weight: 600;
     line-height: 1.25;
     color: var(--text);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   .article-meta {
     font-size: 13px;
     color: var(--text-muted);
     display: flex;
+    align-items: center;
     gap: 20px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
   }
+
+  .share-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 16px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .share-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    font-family: 'Sora', sans-serif;
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .share-btn:hover { opacity: 0.85; }
+  .share-btn.whatsapp { background: #25D366; color: #fff; }
+  .share-btn.copy    { background: var(--blue-faint); color: var(--blue); }
 
   .article-img {
     width: 100%;
@@ -573,7 +629,7 @@
         <span style="font-size:12px;font-weight:600;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Blog Solar</span>
       </div>
     </a>
-    <a class="header-cta" href="#">Solicitar Orçamento</a>
+    <a class="header-cta" href="https://wa.me/5584991465777" target="_blank">Solicitar Orçamento</a>
   </div>
 </header>
 
@@ -627,6 +683,15 @@
       <div class="article-meta">
         <span id="art-date"></span>
         <span id="art-author"></span>
+      </div>
+      <div class="share-bar">
+        <span class="share-label">Compartilhar:</span>
+        <a id="share-whatsapp" class="share-btn whatsapp" href="#" target="_blank">
+          💬 WhatsApp
+        </a>
+        <button class="share-btn copy" onclick="copiarLink()">
+          🔗 Copiar link
+        </button>
       </div>
     </div>
     <div class="article-img-placeholder" id="art-img-wrap">
@@ -712,6 +777,8 @@ function showList() {
   document.getElementById('article-view').classList.remove('active');
   document.getElementById('hero-section').style.display = '';
   document.getElementById('ad-top').style.display = '';
+  document.title = 'Confiance Energy — Blog Solar';
+  history.pushState(null, '', window.location.pathname);
 
   document.getElementById('section-title').innerHTML =
     meta.title + ' <span>' + meta.sub + '</span>';
@@ -790,6 +857,16 @@ function carregarMais() {
   if (alvo) alvo.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+function gerarSlug(titulo) {
+  return titulo
+    .toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .substring(0, 80);
+}
+
 function openPost(id) {
   const p = POSTS.find(x => x.id === id);
   if (!p) return;
@@ -807,6 +884,17 @@ function openPost(id) {
   document.getElementById('art-author').textContent = '✍️ ' + p.autor;
   document.getElementById('art-content').innerHTML = p.conteudo;
 
+  // URL semântica: #/categoria/slug-do-titulo
+  const slug = gerarSlug(p.titulo);
+  const hash = '#/' + p.categoria + '/' + slug + '--' + p.id;
+  history.pushState({ postId: p.id }, p.titulo, hash);
+  document.title = p.titulo + ' — Confiance Energy';
+
+  // Share bar
+  const postUrl = window.location.origin + window.location.pathname + hash;
+  const texto = encodeURIComponent(p.titulo + '\n\n' + postUrl);
+  document.getElementById('share-whatsapp').href = 'https://wa.me/?text=' + texto;
+
   const imgWrap = document.getElementById('art-img-wrap');
   if (p.imagem && p.imagem.trim() !== '') {
     imgWrap.innerHTML = `<img src="${p.imagem}" alt="${p.titulo}" class="article-img">`;
@@ -817,8 +905,38 @@ function openPost(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function copiarLink() {
+  navigator.clipboard.writeText(window.location.href).then(() => {
+    const btn = document.querySelector('.share-btn.copy');
+    btn.textContent = '✅ Link copiado!';
+    setTimeout(() => btn.innerHTML = '🔗 Copiar link', 2000);
+  });
+}
+
+// Abre post direto se vier de link compartilhado
+function verificarHash() {
+  const hash = window.location.hash;
+  if (!hash) return;
+  // Formato: #/categoria/slug--id
+  const match = hash.match(/--(\d+)$/);
+  if (match) {
+    const id = parseInt(match[1]);
+    if (!isNaN(id)) openPost(id);
+  }
+}
+
+// Botão voltar do browser
+window.addEventListener('popstate', (e) => {
+  if (e.state && e.state.postId) {
+    openPost(e.state.postId);
+  } else {
+    history.pushState(null, '', window.location.pathname);
+    showList();
+  }
+});
+
 // INIT
-carregarPosts();
+carregarPosts().then(() => verificarHash());
 </script>
 </body>
 </html>
