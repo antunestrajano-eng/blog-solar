@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 9,
+      "slug": "preco-dos-kits-solares-vai-subir-em-abril-e-quem-instalar-antes-sai-na-frente--9",
+      "titulo": "Preço dos kits solares vai subir em abril — e quem instalar antes sai na frente",
+      "resumo": "A partir de 1º de abril, o fim do incentivo fiscal chinês deve elevar em até 35% o preço dos kits solares no Brasil. Saiba o que está acontecendo e por que agir agora.",
+      "conteudo": "<p>O relógio está correndo. A partir de 1º de abril de 2026, o mercado solar brasileiro vai sentir mais uma rodada de aumento nos preços dos equipamentos fotovoltaicos — e quem já estava pensando em instalar energia solar tem um motivo concreto para não esperar mais.</p><h2>Entenda o que está acontecendo</h2><p>A China cancelará o reembolso do VAT (Value-Added Tax), um incentivo fiscal que permitia aos fabricantes chineses devolver até 9% do imposto sobre as exportações. Na prática, esse mecanismo barateava os produtos no mercado internacional. Com o fim do benefício, o custo extra tende a ser repassado diretamente ao preço final dos equipamentos.</p><p>O impacto é direto para o Brasil, que importa mais de 90% dos equipamentos solares utilizados no país — todos fabricados na China.</p><h2>Os preços já subiram — e abril vem com mais</h2><p>Esse não é o primeiro aumento do ciclo. Desde o fim de 2025, o mercado já acumula reajustes sucessivos impulsionados pela alta no custo de matérias-primas, especialmente a prata. Segundo especialistas do setor ouvidos pelo Canal Solar, apenas nos últimos três meses os módulos fotovoltaicos acumularam alta próxima de 35%.</p><p>Com a chegada de abril, uma nova camada de pressão se soma ao cenário. A estimativa é de um reajuste total próximo de 35% no preço do kit solar — combinando a alta das matérias-primas com o fim do incentivo fiscal chinês, que deve representar sozinho um acréscimo de aproximadamente 5%.</p><p>Para as baterias, o impacto será gradual: o reembolso cai de 9% para 6% entre abril e dezembro de 2026, sendo totalmente eliminado em janeiro de 2027.</p><h2>Vale a pena mesmo assim?</h2><p>Sim — e os números provam. Antes da pandemia, um Watt de kit solar custava entre R$ 3,20 e R$ 3,50. No pico da queda, chegou a R$ 0,90. Hoje está entre R$ 1,30 e R$ 1,40, e pode chegar a R$ 1,70 ou R$ 1,80 ao longo deste ano. Ainda assim, o payback permanece atrativo — entre dois e três anos — e a energia solar segue sendo um dos melhores investimentos disponíveis para residências e empresas.</p><h2>Mas o momento de agir é agora</h2><p>Quem fechar contrato antes de abril garante o preço atual, ainda sem o impacto do fim do incentivo chinês. Cada semana de espera é uma semana mais perto do reajuste. Se você já estava pensando em energia solar, esse é o sinal que faltava.</p><p>Entre em contato com a Confiance Energy e solicite um orçamento sem compromisso. Nossos projetos são transparentes, com equipamentos certificados e nota fiscal — do jeito certo, antes que o preço suba.</p><p><em>Fonte: Canal Solar — canalsolar.com.br</em></p>",
+      "categoria": "noticias",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/preco-dos-kits-solares-vai-subir-em-abril-e-quem-instalar-antes-sai-na-frente--9.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "Invalid Date"
+    },
+    {
       "id": 8,
       "slug": "conta-de-luz-pode-subir-em-2026-projecao-da-aneel-acende-alerta-para-consumidore--8",
       "titulo": "Conta de luz pode subir em 2026: projeção da ANEEL acende alerta para consumidores",
@@ -97,5 +109,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-03-24T17:20:37.802Z"
+  "atualizadoEm": "2026-03-27T19:57:45.159Z"
 }
