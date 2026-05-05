@@ -36,32 +36,6 @@
 <meta name="twitter:title" content="Blog Solar — Confiance Energy | Natal, RN">
 <meta name="twitter:description" content="Notícias, informativos e dicas sobre energia solar em Natal e no Nordeste.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg">
-
-<!-- Schema Markup: Blog + Organização -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Confiance Energy — Blog Solar",
-  "description": "Blog de energia solar da Confiance Energy em Natal, RN. Notícias, informativos e dicas sobre painéis solares e economia de energia no Nordeste.",
-  "url": "https://blog.confianceenergy.com",
-  "publisher": {
-    "@type": "LocalBusiness",
-    "name": "Confiance Energy",
-    "url": "https://confianceenergy.com",
-    "telephone": "+55-84-99146-5777",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Praia de Tibau, 2234",
-      "addressLocality": "Natal",
-      "addressRegion": "RN",
-      "postalCode": "59094-500",
-      "addressCountry": "BR"
-    },
-    "sameAs": ["https://www.instagram.com/confianceenergy"]
-  }
-}
-<\/script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
@@ -721,6 +695,31 @@
     #load-more-btn { padding: 12px 32px; font-size: 13px; }
   }
 </style>
+
+<!-- Schema Markup: Blog -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Confiance Energy — Blog Solar",
+  "description": "Blog de energia solar da Confiance Energy em Natal, RN.",
+  "url": "https://blog.confianceenergy.com",
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "Confiance Energy",
+    "url": "https://confianceenergy.com",
+    "telephone": "+55-84-99146-5777",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Praia de Tibau, 2234",
+      "addressLocality": "Natal",
+      "addressRegion": "RN",
+      "postalCode": "59094-500",
+      "addressCountry": "BR"
+    }
+  }
+}
+</script>
 </head>
 <body>
 
@@ -733,8 +732,10 @@
         <span style="font-size:12px;font-weight:600;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Blog Solar</span>
       </div>
     </a>
-    <a href="https://confianceenergy.com" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none;margin-right:16px;transition:color 0.2s;" onmouseover="this.style.color='var(--blue)'" onmouseout="this.style.color='var(--text-muted)'">← Site principal</a>
-    <a class="header-cta" href="https://wa.me/5584991465777" target="_blank">Solicitar Orçamento</a>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <a href="https://confianceenergy.com" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:var(--text-muted);text-decoration:none;border:1px solid var(--border);padding:7px 14px;border-radius:7px;transition:all 0.2s;" onmouseover="this.style.color='var(--blue)';this.style.borderColor='var(--blue)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='var(--border)'">← confianceenergy.com</a>
+      <a class="header-cta" href="https://wa.me/5584991465777" target="_blank">Solicitar Orçamento</a>
+    </div>
   </div>
 </header>
 
@@ -761,9 +762,6 @@
 
 <!-- MAIN -->
 <main>
-  <!-- AD SLOT (placeholder sem AdSense) -->
-  <div class="ad-slot" id="ad-top" style="display:none"></div>
-
   <!-- LISTA DE CARDS -->
   <div id="list-view">
     <div class="section-header">
@@ -830,11 +828,6 @@
     <div class="article-content" id="art-content"></div>
   </div>
 </main>
-
-<!-- AD SLOT RODAPÉ (placeholder sem AdSense) -->
-<div style="max-width:1200px;margin:0 auto;padding:0 32px 32px">
-  <div class="ad-slot" style="display:none"></div>
-</div>
 
 <!-- FOOTER -->
 <footer>
