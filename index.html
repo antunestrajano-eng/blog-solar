@@ -1033,7 +1033,8 @@ function openPost(id) {
   // URL de compartilhamento aponta para a página de preview
   const slug = p.slug || (gerarSlug(p.titulo) + '--' + p.id);
   const postPath = '/' + p.categoria + '/' + slug;
-  const shareUrl = 'https://blog.confianceenergy.com' + postPath;
+  // shareUrl aponta para o preview estático com meta tags corretas (para WhatsApp/Instagram)
+  const shareUrl = `https://blog.confianceenergy.com/p/${p.categoria}/${slug}.html`;
 
   _shareUrl = shareUrl;
   history.pushState({ postId: p.id }, p.titulo, postPath);
