@@ -12,30 +12,29 @@
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog Solar — Confiance Energy | Natal, RN</title>
+<title>Confiance Energy — Blog Solar</title>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
-<meta name="description" content="Blog de energia solar da Confiance Energy em Natal, RN. Notícias, informativos e dicas sobre painéis solares, financiamento e economia de energia no Nordeste.">
-<meta name="keywords" content="energia solar Natal, blog energia solar, painel solar Natal RN, dicas energia solar, notícias energia solar Nordeste, Confiance Energy blog">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://blog.confianceenergy.com/">
+<meta name="description" content="Notícias, informativos e dicas sobre energia solar. Conteúdo especializado da Confiance Energy.">
 
 <!-- Open Graph / WhatsApp / Instagram -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Confiance Energy — Blog Solar">
-<meta property="og:title" content="Blog Solar — Confiance Energy | Natal, RN">
-<meta property="og:description" content="Notícias, informativos e dicas sobre energia solar em Natal e no Nordeste. Conteúdo especializado da Confiance Energy.">
-<meta property="og:image" content="https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg">
+<meta property="og:title" id="og-title" content="Blog Solar — Confiance Energy | Natal, RN">
+<meta property="og:description" id="og-description" content="Notícias, informativos e dicas sobre energia solar em Natal e no Nordeste.">
+<meta property="og:image" id="og-image" content="https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg">
+
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="https://blog.confianceenergy.com/">
+<meta property="og:url" id="og-url" content="https://blog.confianceenergy.com/">
 <meta property="og:locale" content="pt_BR">
 
 <!-- Twitter/X Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Blog Solar — Confiance Energy | Natal, RN">
-<meta name="twitter:description" content="Notícias, informativos e dicas sobre energia solar em Natal e no Nordeste.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg">
+<meta name="twitter:title" id="tw-title" content="Blog Solar — Confiance Energy | Natal, RN">
+<meta name="twitter:description" id="tw-description" content="Notícias, informativos e dicas sobre energia solar em Natal e no Nordeste.">
+<meta name="twitter:image" id="tw-image" content="https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg">
+<link rel="canonical" id="canonical" href="https://blog.confianceenergy.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
@@ -695,31 +694,6 @@
     #load-more-btn { padding: 12px 32px; font-size: 13px; }
   }
 </style>
-
-<!-- Schema Markup: Blog -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Confiance Energy — Blog Solar",
-  "description": "Blog de energia solar da Confiance Energy em Natal, RN.",
-  "url": "https://blog.confianceenergy.com",
-  "publisher": {
-    "@type": "LocalBusiness",
-    "name": "Confiance Energy",
-    "url": "https://confianceenergy.com",
-    "telephone": "+55-84-99146-5777",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Praia de Tibau, 2234",
-      "addressLocality": "Natal",
-      "addressRegion": "RN",
-      "postalCode": "59094-500",
-      "addressCountry": "BR"
-    }
-  }
-}
-</script>
 </head>
 <body>
 
@@ -732,17 +706,14 @@
         <span style="font-size:12px;font-weight:600;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Blog Solar</span>
       </div>
     </a>
-    <div style="display:flex;align-items:center;gap:10px;">
-      <a href="https://confianceenergy.com" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:var(--text-muted);text-decoration:none;border:1px solid var(--border);padding:7px 14px;border-radius:7px;transition:all 0.2s;" onmouseover="this.style.color='var(--blue)';this.style.borderColor='var(--blue)'" onmouseout="this.style.color='var(--text-muted)';this.style.borderColor='var(--border)'">← confianceenergy.com</a>
-      <a class="header-cta" href="https://wa.me/5584991465777" target="_blank">Solicitar Orçamento</a>
-    </div>
+    <a class="header-cta" href="https://wa.me/5584991465777" target="_blank">Solicitar Orçamento</a>
   </div>
 </header>
 
 <!-- HERO -->
 <div class="hero" id="hero-section">
-  <h1>Tudo sobre energia solar <em>em Natal e no Nordeste</em></h1>
-  <p>Notícias, informativos e dicas para quem quer economizar e investir em energia limpa em Natal, RN e em todo o Nordeste.</p>
+  <h1>Tudo sobre energia solar <em>para você</em></h1>
+  <p>Notícias, informativos e dicas — conteúdo pensado para quem quer economizar e investir em energia limpa.</p>
 </div>
 
 <!-- TABS -->
@@ -762,6 +733,9 @@
 
 <!-- MAIN -->
 <main>
+  <!-- AD SLOT (placeholder sem AdSense) -->
+  <div class="ad-slot" id="ad-top" style="display:none"></div>
+
   <!-- LISTA DE CARDS -->
   <div id="list-view">
     <div class="section-header">
@@ -829,9 +803,14 @@
   </div>
 </main>
 
+<!-- AD SLOT RODAPÉ (placeholder sem AdSense) -->
+<div style="max-width:1200px;margin:0 auto;padding:0 32px 32px">
+  <div class="ad-slot" style="display:none"></div>
+</div>
+
 <!-- FOOTER -->
 <footer>
-  <strong>Confiance Energy</strong> — Blog Solar &nbsp;·&nbsp; Natal, RN &nbsp;·&nbsp; © 2026
+  <strong>Confiance Energy</strong> — Blog Solar &nbsp;·&nbsp; Natal, RN &nbsp;·&nbsp; © 2025
 </footer>
 
 <script>
@@ -864,16 +843,34 @@ async function carregarPosts() {
     DATA_VERSION = Date.now().toString();
   }
   updateCounts();
-  // Só mostra a lista se não tiver hash de post na URL
-  const hash = window.location.hash;
-  const match = hash.match(/--(\d+)$/);
-  if (match) {
-    const id = parseInt(match[1]);
-    if (!isNaN(id) && POSTS.find(p => p.id === id)) {
-      openPost(id);
-      return;
-    }
+  // Lê ?rota= (vindo do 404.html) ou o pathname direto
+  var rota = '';
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('rota')) {
+    rota = params.get('rota');
+    // Limpa o ?rota= da URL sem recarregar
+    history.replaceState(null, '', rota);
+  } else {
+    rota = window.location.pathname;
   }
+
+  // /noticias/titulo-do-post--13
+  var matchPost = rota.match(/\/([a-z]+)\/(.+--\d+)$/);
+  if (matchPost) {
+    var slug = matchPost[2];
+    var post = POSTS.find(function(p) { return p.slug === slug; });
+    if (post) { openPost(post.id); return; }
+  }
+
+  // /noticias ou /informativos ou /dicas
+  var matchCat = rota.match(/^\/([a-z]+)$/);
+  if (matchCat && ['noticias','informativos','dicas'].includes(matchCat[1])) {
+    currentTab = matchCat[1];
+    document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+    var tabBtn = document.querySelector('.tab[onclick*="' + currentTab + '"]');
+    if (tabBtn) tabBtn.classList.add('active');
+  }
+
   showList();
 }
 let currentPost = null;
@@ -912,10 +909,18 @@ function showList() {
   document.getElementById('list-view').style.display = 'block';
   document.getElementById('article-view').classList.remove('active');
   document.getElementById('hero-section').style.display = '';
-  const adTopEl = document.getElementById('ad-top');
-  if (adTopEl) adTopEl.style.display = '';
+  // ad-top removido
   document.title = 'Confiance Energy — Blog Solar';
-  history.pushState(null, '', window.location.pathname);
+  // URL limpa por categoria
+    var catPath = '/' + currentTab;
+    history.pushState({tab: currentTab}, '', catPath);
+    // Atualiza meta tags
+    atualizarMetaTags({
+      titulo: 'Blog Solar — Confiance Energy | Natal, RN',
+      descricao: 'Notícias, informativos e dicas sobre energia solar em Natal e no Nordeste.',
+      imagem: 'https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg',
+      url: 'https://blog.confianceenergy.com' + catPath
+    });
 
   document.getElementById('section-title').innerHTML =
     meta.title + ' <span>' + meta.sub + '</span>';
@@ -944,7 +949,10 @@ function renderCards() {
     const div = document.createElement('div');
     div.className = 'card';
     div.style.animationDelay = (i * 0.07 + 0.05) + 's';
-    div.onclick = () => openPost(p.id);
+    div.onclick = function(e) {
+      if (e.target.tagName !== 'A') { openPost(p.id); }
+    };
+    div.setAttribute('data-href', '/' + p.categoria + '/' + p.slug);
     div.innerHTML = `
       ${p.imagem && p.imagem.trim() !== ''
         ? `<img src="${p.imagem}" alt="${p.titulo}" class="card-img">`
@@ -1024,12 +1032,17 @@ function openPost(id) {
 
   // URL de compartilhamento aponta para a página de preview
   const slug = p.slug || (gerarSlug(p.titulo) + '--' + p.id);
-  const hashUrl = '#/' + p.categoria + '/' + slug;
-  const shareUrlBase = window.location.origin + window.location.pathname.replace(/\/$/, '') + '/p/' + p.categoria + '/' + slug + '.html';
-  const shareUrl = shareUrlBase + '?v=' + encodeURIComponent(DATA_VERSION);
+  const postPath = '/' + p.categoria + '/' + slug;
+  const shareUrl = 'https://blog.confianceenergy.com' + postPath;
 
   _shareUrl = shareUrl;
-  history.pushState({ postId: p.id }, p.titulo, hashUrl);
+  history.pushState({ postId: p.id }, p.titulo, postPath);
+  atualizarMetaTags({
+    titulo: p.titulo + ' — Confiance Energy',
+    descricao: p.resumo,
+    imagem: p.imagem && p.imagem.trim() !== '' ? p.imagem : 'https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg',
+    url: shareUrl
+  });
   document.title = p.titulo + ' — Confiance Energy';
 
   // Share modal — usa a URL de preview para WhatsApp/Instagram
@@ -1095,13 +1108,38 @@ window.addEventListener('popstate', (e) => {
   if (e.state && e.state.postId) {
     openPost(e.state.postId);
   } else {
-    history.pushState(null, '', window.location.pathname);
+    // URL limpa por categoria
+    var catPath = '/' + currentTab;
+    history.pushState({tab: currentTab}, '', catPath);
+    // Atualiza meta tags
+    atualizarMetaTags({
+      titulo: 'Blog Solar — Confiance Energy | Natal, RN',
+      descricao: 'Notícias, informativos e dicas sobre energia solar em Natal e no Nordeste.',
+      imagem: 'https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg',
+      url: 'https://blog.confianceenergy.com' + catPath
+    });
     showList();
   }
 });
 
 // INIT
 carregarPosts();
+
+// ── ATUALIZA META TAGS DINAMICAMENTE ──
+function atualizarMetaTags(dados) {
+  document.title = dados.titulo;
+  var set = function(id, val) { var el = document.getElementById(id); if (el) el.setAttribute('content', val); };
+  var setHref = function(id, val) { var el = document.getElementById(id); if (el) el.setAttribute('href', val); };
+  set('og-title', dados.titulo);
+  set('og-description', dados.descricao);
+  set('og-image', dados.imagem);
+  set('og-url', dados.url);
+  set('tw-title', dados.titulo);
+  set('tw-description', dados.descricao);
+  set('tw-image', dados.imagem);
+  setHref('canonical', dados.url);
+}
+
 </script>
 </body>
 </html>

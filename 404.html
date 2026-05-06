@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <script>
+    // Pega o caminho atual (ex: /noticias/titulo--13 ou /noticias)
+    var path = window.location.pathname;
+    // Redireciona para index.html passando o caminho como parâmetro
+    var redirect = window.location.protocol + '//' + window.location.host + '/?rota=' + encodeURIComponent(path);
+    window.location.replace(redirect);
+  </script>
+</head>
+<body></body>
+</html>
