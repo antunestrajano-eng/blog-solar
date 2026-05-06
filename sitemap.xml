@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://blog.confianceenergy.com/</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Categoria: Notícias -->
+  <url>
+    <loc>https://blog.confianceenergy.com/noticias</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Categoria: Informativos -->
+  <url>
+    <loc>https://blog.confianceenergy.com/informativos</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Categoria: Dicas -->
+  <url>
+    <loc>https://blog.confianceenergy.com/dicas</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Posts individuais -->
+  <url>
+    <loc>https://blog.confianceenergy.com/noticias/feirao-solar-bv-financie-seu-sistema-solar-com-condicoes-especiais-em-maio--13</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/noticias/cosern-tem-reajuste-de-540-aprovado-pela-aneel-quem-tem-energia-solar-nao-sente---12</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/informativos/telhado-ideal-para-energia-solar-o-que-realmente-importa-na-pratica--11</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/noticias/reajuste-aprovado-pela-aneel-energia-solar-segue-como-melhor-alternativa--10</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/noticias/preco-dos-kits-solares-vai-subir-em-abril-e-quem-instalar-antes-sai-na-frente--9</loc>
+    <lastmod>2026-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/noticias/conta-de-luz-pode-subir-em-2026-projecao-da-aneel-acende-alerta-para-consumidore--8</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/dicas/energia-solar-financiada-vale-a-pena--7</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/dicas/quando-fazer-manutencao-nas-placas-solares--6</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/dicas/chuveiro-eletrico-vilao-ou-mito--5</loc>
+    <lastmod>2026-03-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/informativos/os-perigos-que-seu-vendedor-de-energia-solar-pode-nao-te-contar--4</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/noticias/justica-suspende-cobranca-de-icms-sobre-energia-solar-de-consumidor-no-rn--3</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/informativos/energia-solar-e-imposto-de-renda-voce-sabia-que-pode-economizar-na-venda-do-seu---2</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/informativos/cuidados-na-hora-de-escolher-sua-empresa-de-energia-solar--1</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
