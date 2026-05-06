@@ -9,7 +9,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Categoria: Notícias -->
+  <!-- Categoria: noticias -->
   <url>
     <loc>https://blog.confianceenergy.com/noticias</loc>
     <lastmod>2026-05-06</lastmod>
@@ -17,7 +17,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Categoria: Informativos -->
+  <!-- Categoria: informativos -->
   <url>
     <loc>https://blog.confianceenergy.com/informativos</loc>
     <lastmod>2026-05-06</lastmod>
@@ -25,7 +25,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Categoria: Dicas -->
+  <!-- Categoria: dicas -->
   <url>
     <loc>https://blog.confianceenergy.com/dicas</loc>
     <lastmod>2026-05-06</lastmod>
