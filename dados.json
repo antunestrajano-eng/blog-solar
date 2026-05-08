@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 14,
+      "slug": "a-folga-do-inversor-o-que-os-vendedores-nao-contam-sobre-essa-vantagem--14",
+      "titulo": "A Folga do Inversor: o que os vendedores não contam sobre essa \"vantagem\"",
+      "resumo": "Entenda por que o inversor superdimensionado é vendido como um diferencial — e por que, na maioria dos casos, esse custo extra nunca se converte em benefício real para o cliente.",
+      "conteudo": "",
+      "categoria": "informativos",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/a-folga-do-inversor-o-que-os-vendedores-nao-contam-sobre-essa-vantagem--14.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "08 de mai. de 2026"
+    },
+    {
       "id": 13,
       "slug": "feirao-solar-bv-financie-seu-sistema-solar-com-condicoes-especiais-em-maio--13",
       "titulo": "Feirão Solar BV: financie seu sistema solar com condições especiais em maio",
@@ -157,5 +169,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-05-06T15:42:40.518Z"
+  "atualizadoEm": "2026-05-08T14:09:48.171Z"
 }
