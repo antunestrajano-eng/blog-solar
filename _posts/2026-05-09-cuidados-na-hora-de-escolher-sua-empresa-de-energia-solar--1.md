@@ -2,6 +2,7 @@
 layout: post
 title: "Cuidados na hora de escolher sua empresa de energia solar"
 slug: "cuidados-na-hora-de-escolher-sua-empresa-de-energia-solar--1"
+categories: ["informativos"]
 categoria: "informativos"
 resumo: "Antes de contratar, pesquise o CNPJ, verifique o Reclame Aqui, exija nota fiscal e confira os equipamentos. Veja o guia completo."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/cuidados-na-hora-de-escolher-sua-empresa-de-energia-solar--1.jpg"
