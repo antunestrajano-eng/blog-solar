@@ -2,6 +2,7 @@
 layout: post
 title: "Telhado ideal para energia solar: o que realmente importa na prática"
 slug: "telhado-ideal-para-energia-solar-o-que-realmente-importa-na-pratica--11"
+categories: ["informativos"]
 categoria: "informativos"
 resumo: "Entenda o que realmente importa na hora de escolher ou avaliar seu telhado para energia solar: tipo de telha, estrutura, sombreamento e inclinação na prática."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/telhado-ideal-para-energia-solar-o-que-realmente-importa-na-pratica--11.jpg"
