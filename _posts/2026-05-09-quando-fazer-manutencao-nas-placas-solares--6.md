@@ -2,6 +2,7 @@
 layout: post
 title: "Quando fazer manutenção nas placas solares"
 slug: "quando-fazer-manutencao-nas-placas-solares--6"
+categories: ["dicas"]
 categoria: "dicas"
 resumo: "A manutenção preventiva aumenta a geração de energia e evita prejuízos. Veja os sinais de alerta, a frequência ideal e os cuidados essenciais com o sistema solar."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/quando-fazer-manutencao-nas-placas-solares--6.jpg"
