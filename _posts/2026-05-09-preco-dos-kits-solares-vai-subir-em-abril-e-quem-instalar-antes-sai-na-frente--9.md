@@ -2,6 +2,7 @@
 layout: post
 title: "Preço dos kits solares vai subir em abril — e quem instalar antes sai na frente"
 slug: "preco-dos-kits-solares-vai-subir-em-abril-e-quem-instalar-antes-sai-na-frente--9"
+categories: ["noticias"]
 categoria: "noticias"
 resumo: "A partir de 1º de abril, o fim do incentivo fiscal chinês deve elevar em até 35% o preço dos kits solares no Brasil. Saiba o que está acontecendo e por que agir agora."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/preco-dos-kits-solares-vai-subir-em-abril-e-quem-instalar-antes-sai-na-frente--9.jpg"
