@@ -2,6 +2,7 @@
 layout: post
 title: "Reajuste aprovado pela Aneel: energia solar segue como melhor alternativa!"
 slug: "reajuste-aprovado-pela-aneel-energia-solar-segue-como-melhor-alternativa--10"
+categories: ["noticias"]
 categoria: "noticias"
 resumo: "Com reajustes sucessivos na tarifa elétrica, investir em energia solar continua sendo a forma mais eficiente de blindar o orçamento familiar e empresarial contra as altas."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/reajuste-aprovado-pela-aneel-energia-solar-segue-como-melhor-alternativa--10.png"
