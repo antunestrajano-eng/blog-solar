@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} — Confiance Energy</title>
+<meta name="description" content="{{ page.resumo }}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.confianceenergy.com/{{ page.categoria }}/{{ page.slug }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Confiance Energy — Blog Solar">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.resumo }}">
+<meta property="og:image" content="{{ page.imagem }}">
+<meta property="og:url" content="https://blog.confianceenergy.com/{{ page.categoria }}/{{ page.slug }}">
+<meta property="og:locale" content="pt_BR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.resumo }}">
+<meta name="twitter:image" content="{{ page.imagem }}">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ page.title | escape }}",
+  "description": "{{ page.resumo | escape }}",
+  "image": "{{ page.imagem }}",
+  "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+  "author": { "@type": "Organization", "name": "Confiance Energy" },
+  "publisher": {
+    "@type": "LocalBusiness",
+    "name": "Confiance Energy",
+    "url": "https://confianceenergy.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Natal", "addressRegion": "RN", "addressCountry": "BR" }
+  },
+  "url": "https://blog.confianceenergy.com/{{ page.categoria }}/{{ page.slug }}"
+}
+</script>
+<link rel="icon" href="/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1E3A5F;--azul-mid:#2D5A8E;--sol:#F59E0B;--sol-light:#FEF3C7;--bg:#F8FAFC;--text:#0F172A;--muted:#64748B;--border:#E2E8F0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text)}
+header{background:var(--azul);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.header-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.header-logo img{height:36px}
+.header-logo span{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:#fff}
+.header-right{display:flex;align-items:center;gap:12px}
+.header-back{font-size:13px;font-weight:500;color:rgba(255,255,255,.7);text-decoration:none}
+.header-back:hover{color:#fff}
+.header-cta{background:var(--sol);color:var(--azul);font-weight:700;font-size:13px;padding:8px 18px;border-radius:8px;text-decoration:none}
+.post-hero{width:100%;max-height:420px;overflow:hidden}
+.post-hero img{width:100%;height:420px;object-fit:cover;display:block}
+.container{max-width:780px;margin:0 auto;padding:48px 24px 80px}
+.cat-badge{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;padding:4px 12px;border-radius:20px;margin-bottom:16px}
+.cat-noticias{background:#DBEAFE;color:#1D4ED8}
+.cat-informativos{background:#D1FAE5;color:#065F46}
+.cat-dicas{background:var(--sol-light);color:#92400E}
+h1.post-title{font-family:'Syne',sans-serif;font-size:clamp(24px,4vw,36px);font-weight:800;line-height:1.25;color:var(--text);margin-bottom:16px}
+.post-meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--muted);margin-bottom:32px;padding-bottom:32px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+.post-resumo{font-size:18px;font-weight:500;color:var(--azul);line-height:1.6;margin-bottom:32px;padding:20px 24px;background:#EFF6FF;border-left:4px solid var(--azul-mid);border-radius:0 8px 8px 0}
+.post-content{font-size:16px;line-height:1.8;color:#1E293B}
+.post-content p{margin-bottom:20px}
+.post-content h2{font-family:'Syne',sans-serif;font-size:22px;font-weight:700;color:var(--azul);margin:36px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--sol-light)}
+.post-content strong{color:var(--azul);font-weight:600}
+.post-content a{color:var(--azul-mid);text-decoration:underline}
+.post-content em{font-size:13px;color:var(--muted);font-style:normal}
+.post-cta{margin-top:48px;background:linear-gradient(135deg,var(--azul) 0%,var(--azul-mid) 100%);border-radius:16px;padding:40px;text-align:center;color:#fff}
+.post-cta h3{font-family:'Syne',sans-serif;font-size:22px;font-weight:800;margin-bottom:12px}
+.post-cta p{font-size:15px;opacity:.85;margin-bottom:24px}
+.post-cta a{display:inline-block;background:var(--sol);color:var(--azul);font-weight:700;font-size:15px;padding:14px 32px;border-radius:10px;text-decoration:none}
+.share-bar{margin-top:40px;padding-top:32px;border-top:1px solid var(--border);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.share-label{font-size:13px;font-weight:600;color:var(--muted)}
+.share-btn{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;border:none;cursor:pointer}
+.share-whatsapp{background:#25D366;color:#fff}
+.share-copy{background:var(--bg);border:1.5px solid var(--border);color:var(--text)}
+.back-link{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--azul-mid);text-decoration:none;margin-bottom:32px}
+footer{background:var(--azul);color:rgba(255,255,255,.6);text-align:center;padding:24px;font-size:13px}
+footer a{color:rgba(255,255,255,.8);text-decoration:none}
+@media(max-width:640px){header{padding:0 20px}.container{padding:32px 20px 60px}.post-cta{padding:28px 20px}}
+</style>
+</head>
+<body>
+<header>
+  <a href="/" class="header-logo">
+    <img src="/logo.png" alt="Confiance Energy" onerror="this.style.display='none'">
+    <span>Blog Solar</span>
+  </a>
+  <div class="header-right">
+    <a href="https://confianceenergy.com" class="header-back">← Site</a>
+    <a href="https://wa.me/5584991465777" target="_blank" class="header-cta">Solicitar Orçamento</a>
+  </div>
+</header>
+
+{% if page.imagem %}
+<div class="post-hero">
+  <img src="{{ page.imagem }}" alt="{{ page.title }}">
+</div>
+{% endif %}
+
+<div class="container">
+  <a href="/{{ page.categoria }}" class="back-link">← Voltar</a>
+
+  <span class="cat-badge cat-{{ page.categoria }}">
+    {% if page.categoria == 'noticias' %}📰 Notícia
+    {% elsif page.categoria == 'informativos' %}💡 Informativo
+    {% else %}🔆 Dica{% endif %}
+  </span>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <div class="post-meta">
+    <span>📅 {{ page.data }}</span>
+    <span>✍️ {{ page.autor }}</span>
+  </div>
+
+  <div class="post-resumo">{{ page.resumo }}</div>
+
+  <div class="post-content">{{ page.conteudo }}</div>
+
+  <div class="post-cta">
+    <h3>☀️ Instale energia solar em Natal/RN</h3>
+    <p>Mais de 1.200 projetos instalados no Nordeste. Solicite seu orçamento gratuito agora.</p>
+    <a href="https://wa.me/5584991465777" target="_blank">Falar com especialista →</a>
+  </div>
+
+  <div class="share-bar">
+    <span class="share-label">Compartilhar:</span>
+    <a class="share-btn share-whatsapp" href="https://wa.me/?text={{ page.title | url_encode }}%20https://blog.confianceenergy.com/{{ page.categoria }}/{{ page.slug }}" target="_blank">WhatsApp</a>
+    <button class="share-btn share-copy" onclick="navigator.clipboard.writeText(window.location.href);this.textContent='✓ Copiado!'">Copiar link</button>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 <a href="https://confianceenergy.com">Confiance Energy</a> — Energia Solar em Natal/RN · <a href="/">Blog Solar</a></p>
+</footer>
+</body>
+</html>
