@@ -2,6 +2,7 @@
 layout: post
 title: "Cosern tem reajuste de 5,40% aprovado pela Aneel: quem tem energia solar não sente o impacto"
 slug: "cosern-tem-reajuste-de-540-aprovado-pela-aneel-quem-tem-energia-solar-nao-sente---12"
+categories: ["noticias"]
 categoria: "noticias"
 resumo: "A Agência Nacional de Energia Elétrica aprovou aumento na tarifa para mais de 1,6 milhão de consumidores potiguares. Enquanto isso, quem investiu em energia solar não será impactado."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/cosern-tem-reajuste-de-540-aprovado-pela-aneel-quem-tem-energia-solar-nao-sente---12.png"
