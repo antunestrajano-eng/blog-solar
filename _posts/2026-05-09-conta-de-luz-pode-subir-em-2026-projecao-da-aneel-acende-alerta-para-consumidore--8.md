@@ -2,6 +2,7 @@
 layout: post
 title: "Conta de luz pode subir em 2026: projeção da ANEEL acende alerta para consumidores"
 slug: "conta-de-luz-pode-subir-em-2026-projecao-da-aneel-acende-alerta-para-consumidore--8"
+categories: ["noticias"]
 categoria: "noticias"
 resumo: "Projeção inicial da ANEEL indica alta média de 8% na energia em 2026, acima da inflação. Entenda os fatores e como reduzir o impacto no orçamento."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/conta-de-luz-pode-subir-em-2026-projecao-da-aneel-acende-alerta-para-consumidore--8.png"
