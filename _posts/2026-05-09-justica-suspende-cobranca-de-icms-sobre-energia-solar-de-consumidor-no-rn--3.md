@@ -2,6 +2,7 @@
 layout: post
 title: "Justiça suspende cobrança de ICMS sobre energia solar de consumidor no RN"
 slug: "justica-suspende-cobranca-de-icms-sobre-energia-solar-de-consumidor-no-rn--3"
+categories: ["noticias"]
 categoria: "noticias"
 resumo: "Consumidor de Baraúna conseguiu decisão judicial que suspende ICMS sobre energia gerada pelo próprio sistema solar. Entenda o que isso significa para quem tem painéis no RN."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/justica-suspende-cobranca-de-icms-sobre-energia-solar-de-consumidor-no-rn--3.jpg"
