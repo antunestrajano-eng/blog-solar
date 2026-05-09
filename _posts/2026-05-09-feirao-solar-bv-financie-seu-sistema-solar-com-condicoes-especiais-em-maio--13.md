@@ -2,6 +2,7 @@
 layout: post
 title: "Feirão Solar BV: financie seu sistema solar com condições especiais em maio"
 slug: "feirao-solar-bv-financie-seu-sistema-solar-com-condicoes-especiais-em-maio--13"
+categories: ["noticias"]
 categoria: "noticias"
 resumo: "O Banco BV oferece taxas reduzidas e até 120 dias para começar a pagar durante todo o mês de maio. A Confiance Energy participa do feirão — saiba como aproveitar."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/feirao-solar-bv-financie-seu-sistema-solar-com-condicoes-especiais-em-maio--13.jpg"
