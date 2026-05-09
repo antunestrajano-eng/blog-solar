@@ -2,6 +2,7 @@
 layout: post
 title: "Energia solar financiada: vale a pena?"
 slug: "energia-solar-financiada-vale-a-pena--7"
+categories: ["dicas"]
 categoria: "dicas"
 resumo: "Financiar energia solar pode ser uma decisão inteligente para reduzir a conta de luz sem investimento inicial alto. Veja vantagens, cuidados e como a Confiance facilita sua aprovação."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/energia-solar-financiada-vale-a-pena--7.jpg"
