@@ -8,3 +8,10 @@ permalink: /:categories/:slug
 
 plugins:
   - jekyll-sitemap
+
+include:
+  - favicon.png
+  - og-image.jpg
+  - dados.json
+  - sitemap.xml
+  - robots.txt
