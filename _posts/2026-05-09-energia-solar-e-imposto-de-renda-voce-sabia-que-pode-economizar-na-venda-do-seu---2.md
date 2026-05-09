@@ -2,6 +2,7 @@
 layout: post
 title: "Energia solar e Imposto de Renda: você sabia que pode economizar na venda do seu imóvel?"
 slug: "energia-solar-e-imposto-de-renda-voce-sabia-que-pode-economizar-na-venda-do-seu---2"
+categories: ["informativos"]
 categoria: "informativos"
 resumo: "Quem instalou energia solar pode incluir o investimento como melhoria no IR e economizar no ganho de capital na venda do imóvel. Entenda como."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/energia-solar-e-imposto-de-renda-voce-sabia-que-pode-economizar-na-venda-do-seu---2.jpg"
