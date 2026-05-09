@@ -4,7 +4,7 @@
   <!-- Página principal -->
   <url>
     <loc>https://blog.confianceenergy.com/</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Categoria: noticias -->
   <url>
     <loc>https://blog.confianceenergy.com/noticias</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,7 +20,7 @@
   <!-- Categoria: informativos -->
   <url>
     <loc>https://blog.confianceenergy.com/informativos</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -28,7 +28,7 @@
   <!-- Categoria: dicas -->
   <url>
     <loc>https://blog.confianceenergy.com/dicas</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
