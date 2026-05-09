@@ -2,6 +2,7 @@
 layout: post
 title: "Chuveiro elétrico: vilão ou mito?"
 slug: "chuveiro-eletrico-vilao-ou-mito--5"
+categories: ["dicas"]
 categoria: "dicas"
 resumo: "O chuveiro elétrico pesa na conta, mas nem sempre é o maior culpado. Entenda quando ele realmente impacta o consumo e como reduzir gastos sem perder conforto."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/chuveiro-eletrico-vilao-ou-mito--5.jpg"
