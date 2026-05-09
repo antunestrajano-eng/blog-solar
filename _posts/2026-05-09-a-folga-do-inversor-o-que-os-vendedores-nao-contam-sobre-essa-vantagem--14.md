@@ -2,6 +2,7 @@
 layout: post
 title: "A Folga do Inversor: o que os vendedores não contam sobre essa ''vantagem''"
 slug: "a-folga-do-inversor-o-que-os-vendedores-nao-contam-sobre-essa-vantagem--14"
+categories: ["informativos"]
 categoria: "informativos"
 resumo: "Entenda por que o inversor superdimensionado é vendido como um diferencial — e por que, na maioria dos casos, esse custo extra nunca se converte em benefício real para o cliente."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/a-folga-do-inversor-o-que-os-vendedores-nao-contam-sobre-essa-vantagem--14.jpg"
