@@ -2,6 +2,7 @@
 layout: post
 title: "Os perigos que seu vendedor de energia solar pode não te contar"
 slug: "os-perigos-que-seu-vendedor-de-energia-solar-pode-nao-te-contar--4"
+categories: ["informativos"]
 categoria: "informativos"
 resumo: "Cabos subdimensionados e disjuntores sem certificação podem causar incêndios e danos graves. Saiba o que exigir antes de fechar seu contrato."
 imagem: "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/os-perigos-que-seu-vendedor-de-energia-solar-pode-nao-te-contar--4.jpg"
