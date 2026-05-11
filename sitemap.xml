@@ -1,119 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Página principal -->
   <url>
     <loc>https://blog.confianceenergy.com/</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Categoria: noticias -->
   <url>
-    <loc>https://blog.confianceenergy.com/noticias</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Categoria: informativos -->
-  <url>
-    <loc>https://blog.confianceenergy.com/informativos</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Categoria: dicas -->
-  <url>
-    <loc>https://blog.confianceenergy.com/dicas</loc>
-    <lastmod>2026-05-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Posts individuais -->
-  <url>
-    <loc>https://blog.confianceenergy.com/informativos/a-folga-do-inversor-o-que-os-vendedores-nao-contam-sobre-essa-vantagem--14</loc>
+    <loc>https://blog.confianceenergy.com/p/informativos/a-folga-do-inversor-o-que-os-vendedores-nao-contam-sobre-essa-vantagem--14.html</loc>
     <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/noticias/feirao-solar-bv-financie-seu-sistema-solar-com-condicoes-especiais-em-maio--13</loc>
+    <loc>https://blog.confianceenergy.com/p/noticias/feirao-solar-bv-financie-seu-sistema-solar-com-condicoes-especiais-em-maio--13.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/noticias/cosern-tem-reajuste-de-540-aprovado-pela-aneel-quem-tem-energia-solar-nao-sente---12</loc>
+    <loc>https://blog.confianceenergy.com/p/noticias/cosern-tem-reajuste-de-540-aprovado-pela-aneel-quem-tem-energia-solar-nao-sente---12.html</loc>
     <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/informativos/telhado-ideal-para-energia-solar-o-que-realmente-importa-na-pratica--11</loc>
+    <loc>https://blog.confianceenergy.com/p/informativos/telhado-ideal-para-energia-solar-o-que-realmente-importa-na-pratica--11.html</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/noticias/reajuste-aprovado-pela-aneel-energia-solar-segue-como-melhor-alternativa--10</loc>
+    <loc>https://blog.confianceenergy.com/p/noticias/reajuste-aprovado-pela-aneel-energia-solar-segue-como-melhor-alternativa--10.html</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/noticias/preco-dos-kits-solares-vai-subir-em-abril-e-quem-instalar-antes-sai-na-frente--9</loc>
+    <loc>https://blog.confianceenergy.com/p/noticias/preco-dos-kits-solares-vai-subir-em-abril-e-quem-instalar-antes-sai-na-frente--9.html</loc>
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/noticias/conta-de-luz-pode-subir-em-2026-projecao-da-aneel-acende-alerta-para-consumidore--8</loc>
+    <loc>https://blog.confianceenergy.com/p/noticias/conta-de-luz-pode-subir-em-2026-projecao-da-aneel-acende-alerta-para-consumidore--8.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/dicas/energia-solar-financiada-vale-a-pena--7</loc>
+    <loc>https://blog.confianceenergy.com/p/dicas/energia-solar-financiada-vale-a-pena--7.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/dicas/quando-fazer-manutencao-nas-placas-solares--6</loc>
+    <loc>https://blog.confianceenergy.com/p/dicas/quando-fazer-manutencao-nas-placas-solares--6.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/dicas/chuveiro-eletrico-vilao-ou-mito--5</loc>
+    <loc>https://blog.confianceenergy.com/p/dicas/chuveiro-eletrico-vilao-ou-mito--5.html</loc>
     <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/informativos/os-perigos-que-seu-vendedor-de-energia-solar-pode-nao-te-contar--4</loc>
+    <loc>https://blog.confianceenergy.com/p/informativos/os-perigos-que-seu-vendedor-de-energia-solar-pode-nao-te-contar--4.html</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/noticias/justica-suspende-cobranca-de-icms-sobre-energia-solar-de-consumidor-no-rn--3</loc>
+    <loc>https://blog.confianceenergy.com/p/noticias/justica-suspende-cobranca-de-icms-sobre-energia-solar-de-consumidor-no-rn--3.html</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/informativos/energia-solar-e-imposto-de-renda-voce-sabia-que-pode-economizar-na-venda-do-seu---2</loc>
+    <loc>https://blog.confianceenergy.com/p/informativos/energia-solar-e-imposto-de-renda-voce-sabia-que-pode-economizar-na-venda-do-seu---2.html</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.confianceenergy.com/informativos/cuidados-na-hora-de-escolher-sua-empresa-de-energia-solar--1</loc>
+    <loc>https://blog.confianceenergy.com/p/informativos/cuidados-na-hora-de-escolher-sua-empresa-de-energia-solar--1.html</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
