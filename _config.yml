@@ -2,13 +2,8 @@ title: "Blog Solar — Confiance Energy"
 description: "Notícias, informativos e dicas sobre energia solar em Natal, RN e todo o Nordeste."
 url: "https://blog.confianceenergy.com"
 baseurl: ""
-
 markdown: kramdown
 permalink: /:categories/:slug/
-
-plugins:
-  - jekyll-sitemap
-
 include:
   - favicon.png
   - og-image.jpg
