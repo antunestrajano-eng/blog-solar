@@ -1,5 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /p/
-
 Sitemap: https://blog.confianceenergy.com/sitemap.xml
