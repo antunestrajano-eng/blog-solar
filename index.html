@@ -985,87 +985,10 @@ function gerarSlug(titulo) {
 function openPost(id) {
   const p = POSTS.find(x => x.id === id);
   if (!p) return;
-  const meta = catLabels[p.categoria];
-
-  document.getElementById('list-view').style.display = 'none';
-  document.getElementById('hero-section').style.display = 'none';
-  const adTopEl = document.getElementById('ad-top');
-  if (adTopEl) adTopEl.style.display = 'none';
-  document.getElementById('article-view').classList.add('active');
-
-  document.getElementById('art-category').textContent = meta.label;
-  document.getElementById('art-category').className = 'article-category ' + meta.cls;
-  document.getElementById('art-title').textContent = p.titulo;
-  document.getElementById('art-date').textContent = '📅 ' + p.data;
-  document.getElementById('art-author').textContent = '✍️ ' + p.autor;
-  document.getElementById('art-content').innerHTML = p.conteudo;
-
-  // URL de compartilhamento aponta para a página de preview
+  // Redireciona para a página estática — URL real, indexável pelo Google
   const slug = p.slug || (gerarSlug(p.titulo) + '--' + p.id);
-  const hashUrl = '#/' + p.categoria + '/' + slug;
-  const shareUrlBase = window.location.origin + window.location.pathname.replace(/\/$/, '') + '/p/' + p.categoria + '/' + slug + '.html';
-  const shareUrl = shareUrlBase + '?v=' + encodeURIComponent(DATA_VERSION);
-
-  _shareUrl = shareUrl;
-  history.pushState({ postId: p.id }, p.titulo, hashUrl);
-  document.title = p.titulo + ' — Confiance Energy';
-
-  // Share modal — usa a URL de preview para WhatsApp/Instagram
-  const texto = encodeURIComponent(p.titulo + '\n\n' + shareUrl);
-  document.getElementById('share-title-preview').textContent = p.titulo;
-  document.getElementById('share-whatsapp').href = 'https://wa.me/?text=' + texto;
-  document.getElementById('share-whatsapp-business').href = 'https://api.whatsapp.com/send?text=' + texto;
-  document.getElementById('share-instagram').onclick = () => {
-    navigator.clipboard.writeText(shareUrl);
-    fecharShare();
-    return false;
-  };
-
-  const imgWrap = document.getElementById('art-img-wrap');
-  if (p.imagem && p.imagem.trim() !== '') {
-    imgWrap.innerHTML = `<img src="${p.imagem}" alt="${p.titulo}" class="article-img">`;
-  } else {
-    imgWrap.innerHTML = `<div class="article-img-placeholder"><svg width="64" height="64" viewBox="0 0 44 44" fill="none"><circle cx="22" cy="22" r="7" fill="#F5A800" opacity=".5"/><rect x="20.5" y="2" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="20.5" y="34" width="3" height="8" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="2" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".4"/><rect x="34" y="20.5" width="8" height="3" rx="1.5" fill="#F5A800" opacity=".4"/></svg></div>`;
-  }
-
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function abrirShare() {
-  document.getElementById('share-modal').style.display = 'flex';
-}
-
-function fecharShare(e) {
-  document.getElementById('share-modal').style.display = 'none';
-}
-
-let _shareUrl = '';
-
-function copiarLink() {
-  const url = _shareUrl || window.location.href;
-  navigator.clipboard.writeText(url).then(() => {
-    const btn = document.getElementById('share-copy');
-    btn.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Link copiado!`;
-    btn.style.background = '#e6f9f0';
-    btn.style.color = '#166534';
-    setTimeout(() => {
-      btn.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copiar link`;
-      btn.style.background = 'var(--blue-faint)';
-      btn.style.color = 'var(--blue)';
-    }, 2000);
-  });
-}
-
-// Abre post direto se vier de link compartilhado
-function verificarHash() {
-  const hash = window.location.hash;
-  if (!hash) return;
-  // Formato: #/categoria/slug--id
-  const match = hash.match(/--(\d+)$/);
-  if (match) {
-    const id = parseInt(match[1]);
-    if (!isNaN(id)) openPost(id);
-  }
+  const url = '/p/' + p.categoria + '/' + slug + '.html';
+  window.location.href = url;
 }
 
 // Botão voltar do browser
