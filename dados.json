@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 16,
+      "slug": "energia-por-assinatura-ou-financiamento-solar-qual-realmente-compensa--16",
+      "titulo": "Energia por assinatura ou financiamento solar: qual realmente compensa?",
+      "resumo": "A energia solar por assinatura promete desconto na conta de luz sem investimento. Mas quando você compara com o financiamento solar, os números contam uma história diferente.",
+      "conteudo": "<p>Nos últimos anos, uma alternativa ganhou espaço no mercado de energia: a energia solar por assinatura. A proposta é simples — você contrata um plano, passa a receber créditos de usinas solares remotas e tem um desconto na conta de luz, sem precisar instalar nada no seu telhado. Parece atraente. Mas quando você coloca os números na ponta do lápis, a história muda.</p> <h2>Como funciona a energia por assinatura</h2> <p>No modelo por assinatura, empresas especializadas operam fazendas solares e repassam créditos de geração para os assinantes. Esses créditos são compensados na fatura da distribuidora, reduzindo o valor final. O desconto médio praticado no mercado gira em torno de 15% a 17% sobre a energia compensada.</p> <p>Na prática, quem paga R$ 1.000 por mês na conta de luz passaria a pagar em torno de R$ 830 a R$ 850. Uma economia real, mas com um detalhe fundamental: você continua pagando conta para sempre.</p> <h2>O problema que ninguém explica direito</h2> <p>A energia por assinatura não elimina a dependência da distribuidora. Ela apenas reduz o valor que você paga a ela. Não importa quantos anos você permaneça no plano — no mês seguinte ao cancelamento, você volta a pagar o valor cheio. Não há acúmulo, não há patrimônio, não há retorno sobre o investimento. É um desconto permanente que exige um contrato permanente.</p> <p>E toda vez que a Aneel reajusta as tarifas — como aconteceu com a Cosern em 2026 e como acontece todo ano em alguma distribuidora —, sua conta base sobe junto, e o desconto percentual é aplicado sobre um valor maior. Você nunca se desvincula do reajuste.</p> <h2>O financiamento solar bate a assinatura nos seus próprios critérios</h2> <p>Vamos usar o mesmo exemplo: conta de luz de R$ 1.000 por mês.</p> <p>Com energia por assinatura, você passa a pagar cerca de R$ 850. Economia de R$ 150 mensais, sem prazo de término.</p> <p>Com um sistema solar financiado, a parcela mensal de um projeto bem dimensionado pode ficar em torno de R$ 500 a R$ 600. Ou seja, você substitui uma conta de R$ 1.000 por uma parcela menor do que o valor que pagaria com a assinatura — e ainda está construindo um ativo que é seu.</p> <p>Depois que o financiamento termina, a parcela desaparece. A assinatura não.</p> <h2>Para quem a assinatura faz sentido?</h2> <p>A energia por assinatura tem utilidade em casos bem específicos: moradores de apartamento que não têm familiares ou amigos dispostos a participar de um projeto compartilhado — o chamado plano família, onde o sistema é instalado na casa de um e os créditos são distribuídos entre os beneficiários — e imóveis com sombreamento severo que inviabilize a geração. Fora dessas situações, dificilmente a assinatura é a melhor escolha.</p> <p>Para quem tem telhado disponível e condições de financiar, as linhas de crédito solar hoje são acessíveis, com parcelas que na maioria dos casos ficam abaixo do valor que se pagaria na assinatura.</p> <h2>A diferença entre desconto e independência</h2> <p>Energia por assinatura oferece desconto. Energia solar instalada oferece independência. São propostas diferentes, com resultados muito diferentes ao longo do tempo.</p> <p>Quem instala um sistema solar para de depender dos reajustes da distribuidora, acumula um ativo que valoriza o imóvel e garante previsibilidade financeira pelos próximos 25 anos. Quem assina continua na mesma relação com a distribuidora — só que com um intermediário no meio.</p> <p>A Confiance Energy, especialista em energia solar em Natal e região, faz a simulação gratuita do seu projeto, com comparativo real entre os modelos e projeção de economia ao longo do tempo. Entre em contato e veja os números do seu caso antes de assinar qualquer coisa.</p>",
+      "categoria": "informativos",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/energia-por-assinatura-ou-financiamento-solar-qual-realmente-compensa--16.png",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "18 de mai. de 2026"
+    },
+    {
       "id": 15,
       "slug": "queda-na-demanda-por-energia-solar-pressiona-precos-dos-kits-no-nordeste-em-2026--15",
       "titulo": "Queda na demanda por energia solar pressiona preços dos kits no Nordeste em 2026",
@@ -181,5 +193,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-05-18T13:47:38.821Z"
+  "atualizadoEm": "2026-05-18T14:21:41.047Z"
 }
