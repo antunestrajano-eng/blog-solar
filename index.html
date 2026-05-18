@@ -990,6 +990,21 @@ window.addEventListener('popstate', (e) => {
 });
 
 // INIT
+// Lê ?aba= da URL para voltar à categoria certa vindo de um artigo
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const aba = params.get('aba');
+  if (aba && ['noticias','informativos','dicas'].includes(aba)) {
+    currentTab = aba;
+    document.querySelectorAll('.tab').forEach(t => {
+      const tabName = t.getAttribute('onclick').match(/'([^']+)'/)?.[1];
+      if (tabName === aba) t.classList.add('active');
+      else t.classList.remove('active');
+    });
+    // Limpa o parâmetro da URL sem recarregar
+    history.replaceState(null, '', window.location.pathname);
+  }
+})();
 carregarPosts();
 </script>
 </body>
