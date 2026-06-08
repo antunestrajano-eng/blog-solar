@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 18,
+      "slug": "maresia-danifica-placas-solares-o-que-voce-precisa-saber-antes-de-instalar-seu-p--18",
+      "titulo": "Maresia danifica placas solares? O que você precisa saber antes de instalar seu projeto",
+      "resumo": "A maresia realmente prejudica as placas solares? Entenda o que acontece com os painéis em cidades litorâneas, quais componentes merecem atenção e como manter seu sistema funcionando bem em Natal e no litoral do RN.",
+      "conteudo": "<p>Quem mora em Natal ou em cidades litorâneas do Rio Grande do Norte frequentemente faz essa pergunta antes de instalar: <strong>a maresia vai estragar minhas placas solares?</strong> É uma dúvida legítima — afinal, todo mundo sabe o que o ar salgado faz com portões, grades e equipamentos externos ao longo do tempo.</p> <p>A resposta curta é não. Mas tem alguns detalhes importantes que você precisa conhecer antes de instalar.</p> <h2>O que a maresia realmente faz com as placas</h2> <p>O sal disperso no ar pode se depositar sobre a superfície dos painéis com o tempo. Esse acúmulo não corrói o módulo em si, mas reduz a quantidade de luz que chega às células fotovoltaicas — e isso afeta a geração de energia.</p> <p>Ou seja, o problema não é a corrosão das placas, e sim a <strong>sujeira acumulada</strong> que diminui o desempenho do sistema. E isso tem solução simples: limpeza periódica.</p> <h2>Por que as placas resistem à maresia</h2> <p>Os módulos fotovoltaicos são fabricados com proteção específica para ambientes litorâneos. As células ficam encapsuladas entre vidro temperado e uma folha traseira, seladas a vácuo, o que impede a entrada de sal no interior do painel.</p> <p>Painéis de fabricantes reconhecidos possuem a certificação <strong>IEC 61701</strong>, que atesta que o módulo foi testado e aprovado em condições simuladas de névoa salina. É um dos critérios que consideramos na hora de especificar equipamentos para instalações em Natal e no litoral potiguar.</p> <p>As estruturas de fixação também são fabricadas em <strong>alumínio anodizado</strong>, material altamente resistente à corrosão em ambientes costeiros.</p> <h2>O que pode ser afetado com o tempo</h2> <p>Apesar da resistência dos módulos, outros componentes merecem atenção em instalações litorâneas:</p> <p><strong>Parafusos e fixações</strong> — devem ser em aço inoxidável ou alumínio. Fixações de aço carbono comum enferrujam com a maresia.</p> <p><strong>Conectores e fiação externa</strong> — precisam ter boa vedação e proteção UV. A exposição prolongada ao ambiente salino pode degradar conectores de qualidade inferior.</p> <p><strong>Inversor</strong> — o ideal é que fique instalado em local coberto e ventilado, protegido da exposição direta à maresia.</p> <h2>Como manter o desempenho em dia</h2> <p>Em cidades litorâneas, a limpeza dos painéis merece mais atenção do que em regiões do interior. A recomendação é realizar a limpeza com água potável e sem produtos abrasivos, com frequência maior do que em instalações distantes do mar — pelo menos a cada três meses, dependendo da proximidade com a orla.</p> <p>Uma inspeção semestral do sistema também é indicada para verificar fixações, conectores e qualquer sinal de desgaste nos componentes externos.</p> <h2>Resumindo</h2> <p>A maresia não inviabiliza a energia solar em Natal. Com equipamentos certificados, instalação bem executada e manutenção periódica, seu sistema trabalha com plena eficiência por décadas — exatamente como acontece em qualquer outra cidade do Brasil.</p> <p>Na Confiance Energy, todos os projetos no litoral potiguar já são especificados com essa realidade em mente: materiais adequados, certificação IEC 61701 e orientação completa sobre manutenção preventiva.</p>",
+      "categoria": "dicas",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/maresia-danifica-placas-solares-o-que-voce-precisa-saber-antes-de-instalar-seu-p--18.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "08 de jun. de 2026"
+    },
+    {
       "id": 17,
       "slug": "vistoria-da-cosern-no-projeto-solar-tudo-que-voce-precisa-saber-antes-de-instala--17",
       "titulo": "Vistoria da Cosern no projeto solar: tudo que você precisa saber antes de instalar",
@@ -205,5 +217,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-06-02T17:34:19.757Z"
+  "atualizadoEm": "2026-06-08T18:54:41.517Z"
 }
