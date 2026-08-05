@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 25,
+      "slug": "quanto-tempo-duram-os-creditos-de-energia-solar-entenda-antes-que-eles-vencam--25",
+      "titulo": "Quanto tempo duram os créditos de energia solar? Entenda antes que eles vençam",
+      "resumo": "Os créditos de energia solar têm prazo de validade de 60 meses — e muitos consumidores não sabem disso. Entenda como funciona, quando os créditos expiram e o que fazer para não perder energia que você mesmo gerou.",
+      "conteudo": "<p>Você sabia que os créditos de energia solar têm prazo de validade? Muitos consumidores acumulam créditos ao longo dos meses sem saber que eles podem expirar — e perder esses créditos significa jogar fora energia que você mesmo gerou. Entenda como funciona e o que fazer para não desperdiçar nada.</p> <h2>Quanto tempo os créditos duram</h2> <p>Pela Lei 14.300, o Marco Legal da Geração Distribuída, <strong>os créditos de energia solar têm validade de 60 meses</strong> — ou seja, 5 anos contados a partir da data do faturamento em que foram gerados. Após esse prazo, os créditos expiram e são revertidos em favor da modicidade tarifária, sem qualquer compensação para o consumidor.</p> <p>Na prática, isso significa que créditos gerados em agosto de 2026, por exemplo, vencem em agosto de 2031. Se não forem utilizados até lá, somem da sua conta sem reembolso.</p> <h2>Como os créditos são gerados</h2> <p>Quando seu sistema solar gera mais energia do que você consome naquele momento, o excedente é injetado na rede da Cosern. Essa energia injetada é convertida em créditos de energia elétrica, que ficam registrados na sua conta e podem ser utilizados para abater o consumo nos meses seguintes — à noite, em dias nublados ou em períodos de menor geração, como o inverno.</p> <h2>Quando o acúmulo excessivo acontece</h2> <p>O acúmulo de créditos geralmente ocorre quando o sistema foi superdimensionado em relação ao consumo real, ou quando houve mudança no perfil de uso do imóvel — como uma empresa que reduziu o funcionamento ou uma residência que ficou desocupada por um período.</p> <p>Em Natal e no RN, onde a irradiação solar é alta durante o ano todo, sistemas bem dimensionados raramente acumulam créditos por muito tempo. Mas quando o consumo cai por qualquer motivo, os créditos podem se acumular mais rápido do que o esperado.</p> <h2>O que fazer se estiver acumulando créditos</h2> <p>Se você perceber que os créditos estão crescendo mês a mês sem serem consumidos, algumas alternativas podem ajudar:</p> <p><strong>Revisar o perfil de consumo</strong> — aumentar o uso de equipamentos elétricos durante o dia, quando o sistema está gerando, aproveita melhor a geração e reduz a injeção na rede.</p> <p><strong>Transferir créditos para outra unidade</strong> — a Lei 14.300 permite que os créditos sejam utilizados em outras unidades consumidoras do mesmo titular, na mesma distribuidora. Se você tem mais de um imóvel ou estabelecimento comercial, é possível direcionar os créditos para onde o consumo é maior.</p> <p><strong>Verificar o dimensionamento do sistema</strong> — se o acúmulo é constante e crescente, pode ser sinal de que o sistema foi dimensionado acima do necessário para o seu perfil de consumo atual.</p> <h2>Fique de olho na sua fatura</h2> <p>A fatura da Cosern mostra o saldo de créditos acumulados e a data de vencimento dos mais antigos. Vale o hábito de conferir esse saldo mensalmente para garantir que nenhum crédito expire sem ser utilizado.</p> <p>Se tiver dúvidas sobre o desempenho do seu sistema ou quiser entender como otimizar o aproveitamento dos créditos, a <a href=\"https://www.confianceenergy.com\" target=\"_blank\">Confiance Energy</a> pode ajudar com uma análise do seu sistema em Natal e no Rio Grande do Norte.</p>",
+      "categoria": "dicas",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/quanto-tempo-duram-os-creditos-de-energia-solar-entenda-antes-que-eles-vencam--25.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "05 de ago. de 2026"
+    },
+    {
       "id": 24,
       "slug": "a-empresa-que-instalou-meu-sistema-solar-fechou-o-que-acontece-agora--24",
       "titulo": "A empresa que instalou meu sistema solar fechou. O que acontece agora?",
@@ -289,5 +301,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-07-21T13:25:05.064Z"
+  "atualizadoEm": "2026-08-05T17:01:40.579Z"
 }
