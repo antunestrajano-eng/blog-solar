@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 26,
+      "slug": "posso-ampliar-meu-sistema-solar-depois-de-instalado-o-que-voce-precisa-saber--26",
+      "titulo": "Posso ampliar meu sistema solar depois de instalado? O que você precisa saber",
+      "resumo": "Consumo cresceu e o sistema solar não está mais dando conta? Entenda o que é preciso verificar antes de colocar mais placas, desde a capacidade do inversor até a aprovação de um novo projeto junto à Cosern.",
+      "conteudo": "<p>Você instalou um sistema de energia solar, mas o consumo da sua casa ou empresa cresceu — entrou um ar-condicionado novo, ampliou o negócio, ou simplesmente a conta voltou a subir. A dúvida que aparece na sequência é quase sempre a mesma: <strong>dá para colocar mais placas no sistema que já tenho?</strong></p> <p>A resposta é sim, mas depende de alguns fatores que precisam ser avaliados antes.</p> <h2>O inversor suporta mais placas?</h2> <p>O primeiro ponto a verificar é o inversor. Todo inversor tem uma potência máxima de entrada — ou seja, um limite de quantos painéis ele consegue processar. Se o seu inversor já está operando próximo do limite, simplesmente adicionar mais placas não vai funcionar: o equipamento vai limitar a geração no teto da sua capacidade instalada ou apresentar falha.</p> <p>Em alguns casos, o inversor tem margem suficiente para absorver mais painéis sem nenhuma alteração. Em outros, será necessário adicionar um segundo inversor ao sistema para comportar a nova potência.</p> <h2>O projeto precisa ser refeito</h2> <p>Ampliar um sistema solar não é só colocar mais placas no telhado. É necessário refazer o projeto elétrico, recalcular strings, verificar a capacidade dos cabos e dos dispositivos de proteção, e submeter o novo projeto à Cosern para aprovação — exatamente como foi feito na instalação original.</p> <p>Dependendo do tamanho da ampliação, pode ser necessário também solicitar um novo parecer de acesso à concessionária, que vai avaliar se a rede do seu bairro suporta a nova potência.</p> <h2>O telhado tem espaço?</h2> <p>Parece óbvio, mas é um ponto que precisa ser verificado na prática. Além do espaço físico disponível, é preciso garantir que a estrutura de fixação existente comporta mais módulos e que a orientação e inclinação do telhado ainda fazem sentido para o novo conjunto de placas.</p> <h2>Quanto tempo depois posso ampliar?</h2> <p>Não existe um prazo mínimo obrigatório para ampliar o sistema. Você pode ampliar logo após a homologação ou anos depois — o que vai determinar o momento certo é a necessidade real de geração adicional.</p> <p>Vale lembrar que sistemas ampliados após 7 de janeiro de 2023 já entram nas regras da Lei 14.300 para a parte ampliada, com a cobrança progressiva do Fio B sobre a energia injetada. Se o sistema original foi instalado antes dessa data, apenas a ampliação fica sujeita às novas regras.</p> <h2>Quando vale a pena ampliar</h2> <p>A ampliação faz sentido quando o consumo cresceu de forma consistente e o sistema atual já não está cobrindo a demanda. Se a conta voltou a subir de forma significativa e os créditos acumulados zeraram, é um sinal claro de que o sistema está subdimensionado para o consumo atual.</p> <p>Por outro lado, se você ainda tem créditos sobrando todo mês, a ampliação provavelmente não se justifica nesse momento.</p> <h2>Como avaliar se vale a pena no seu caso</h2> <p>O ideal é fazer uma análise comparando o consumo atual com a geração do sistema instalado, verificar a capacidade do inversor e levantar o custo da ampliação versus o retorno esperado. Esse cálculo precisa considerar as regras tarifárias atuais para que o resultado seja realista.</p> <p>Na <a href=\"https://www.confianceenergy.com\" target=\"_blank\">Confiance Energy</a>, fazemos essa avaliação antes de qualquer ampliação — para garantir que colocar mais placas no seu sistema realmente vai resolver o problema e se pagar no prazo esperado. Fale com nossa equipe.</p>",
+      "categoria": "dicas",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/posso-ampliar-meu-sistema-solar-depois-de-instalado-o-que-voce-precisa-saber--26.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "11 de ago. de 2026"
+    },
+    {
       "id": 25,
       "slug": "quanto-tempo-duram-os-creditos-de-energia-solar-entenda-antes-que-eles-vencam--25",
       "titulo": "Quanto tempo duram os créditos de energia solar? Entenda antes que eles vençam",
@@ -301,5 +313,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-08-05T17:01:40.579Z"
+  "atualizadoEm": "2026-08-11T14:23:15.487Z"
 }
