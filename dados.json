@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 27,
+      "slug": "o-que-sao-kwh-kwp-e-kw-e-o-que-representam-na-sua-proposta-de-energia-solar--27",
+      "titulo": "O que são kWh, kWp e kW e o que representam na sua proposta de energia solar",
+      "resumo": "kWh, kWp e kW aparecem em toda proposta de energia solar — mas poucos clientes sabem o que cada um significa. Entenda de forma simples o que cada unidade representa e o que observar antes de assinar um contrato.",
+      "conteudo": "<p>Você pediu um orçamento de energia solar e recebeu uma proposta cheia de siglas: sistema de 6 kWp, inversor de 6 kW, geração estimada de 816 kWh por mês. Se você não trabalha com elétrica, é natural não saber o que isso significa — e assinar uma proposta sem entender o que está comprando não é o ideal.</p> <p>Vamos explicar cada uma dessas unidades de forma simples e direta.</p> <h2>kWh — quilowatt-hora: a unidade do consumo</h2> <p>O kWh é a unidade que aparece na sua conta de luz todo mês. Ele representa a quantidade de energia elétrica consumida ao longo do tempo.</p> <p>Um aparelho de 1.000 watts (1 kW) funcionando durante 1 hora consome exatamente 1 kWh. Um ar-condicionado de 1.500 watts ligado por 2 horas consome 3 kWh. É assim que a Cosern mede o quanto você gastou e o quanto o seu sistema solar gerou.</p> <p>Quando a proposta diz \"geração estimada de 600 kWh por mês\", significa que o sistema vai produzir o equivalente a 600 unidades de energia ao longo daquele mês — que serão descontadas do seu consumo total da rede.</p> <h2>kWp — quilowatt-pico: a potência do sistema</h2> <p>O kWp representa a potência máxima que o conjunto de painéis solares consegue gerar em condições ideais de irradiação — pleno sol, temperatura controlada e sem sombreamento.</p> <p>Quando dizem que um sistema tem 6 kWp, estão falando da soma da potência de todos os painéis instalados. Se cada painel tem 600 watts (0,6 kW), um sistema de 6 kWp usa 10 painéis.</p> <p>O kWp é o principal indicador do tamanho do sistema. Quanto maior o kWp, maior a capacidade de geração — mas o quanto esse sistema vai gerar na prática depende também da irradiação solar da região. Em Natal e no Rio Grande do Norte, a irradiação é uma das mais altas do país, o que significa que cada kWp instalado produz mais energia do que na maioria dos outros estados.</p> <h2>kW — quilowatt: a potência do inversor</h2> <p>O kW sem o \"p\" no final é usado para indicar a potência do inversor — o equipamento que converte a energia gerada pelos painéis em energia elétrica utilizável na sua casa ou empresa.</p> <p>A potência do inversor precisa ser compatível com a potência dos painéis. Um sistema de 6 kWp normalmente usa um inversor de 5 kW a 6 kW. Se o inversor for muito pequeno em relação aos painéis, ele vai limitar a geração nos horários de pico. Se for muito grande, vai operar abaixo da eficiência ideal.</p> <h2>Como essas três unidades se relacionam na prática</h2> <p>Imagine um sistema típico residencial:</p> <p><strong>6 kWp</strong> — potência total dos painéis instalados no telhado;<br> <strong>6 kW</strong> — potência do inversor que processa essa energia;<br> <strong>~816 kWh/mês</strong> — energia estimada que esse sistema vai gerar por mês em Natal.</p> <p>Os 816 kWh gerados vão abater os kWh que você consumiria da Cosern. Se sua conta é de 800 kWh por mês, o sistema cobre o consumo e ainda gera um pequeno excedente, que vira crédito na concessionária. A fatura mínima da Cosern continua sendo cobrada.</p> <h2>O que observar na proposta</h2> <p>Ao receber um orçamento, vale verificar se o kWp do sistema está adequado ao seu consumo médio mensal em kWh. Uma empresa séria faz esse cálculo com base nas suas faturas reais e na irradiação da sua cidade — não usa um número genérico.</p> <p>Se a proposta não deixar claro o kWp do sistema, a potência do inversor e a geração estimada em kWh, peça essas informações antes de assinar qualquer contrato.</p> <p>Na <a href=\"https://www.confianceenergy.com\" target=\"_blank\">Confiance Energy</a>, todas as propostas detalham esses dados de forma transparente, com a geração estimada calculada com base no seu consumo real e na irradiação de Natal e do Rio Grande do Norte. Fale com nossa equipe e tire todas as suas dúvidas antes de decidir.</p>",
+      "categoria": "informativos",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/o-que-sao-kwh-kwp-e-kw-e-o-que-representam-na-sua-proposta-de-energia-solar--27.png",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "21 de ago. de 2026"
+    },
+    {
       "id": 26,
       "slug": "posso-ampliar-meu-sistema-solar-depois-de-instalado-o-que-voce-precisa-saber--26",
       "titulo": "Posso ampliar meu sistema solar depois de instalado? O que você precisa saber",
@@ -313,5 +325,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-08-11T14:23:15.487Z"
+  "atualizadoEm": "2026-08-21T13:31:01.943Z"
 }
