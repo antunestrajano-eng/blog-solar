@@ -3,11 +3,17 @@
 
   <url>
     <loc>https://blog.confianceenergy.com/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://blog.confianceenergy.com/p/informativos/o-que-sao-kwh-kwp-e-kw-e-o-que-representam-na-sua-proposta-de-energia-solar--27.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://blog.confianceenergy.com/p/dicas/posso-ampliar-meu-sistema-solar-depois-de-instalado-o-que-voce-precisa-saber--26.html</loc>
     <lastmod>2026-08-11</lastmod>
