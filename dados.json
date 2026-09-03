@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 28,
+      "slug": "como-saber-se-os-paineis-solares-da-minha-proposta-sao-de-qualidade--28",
+      "titulo": "Como saber se os painéis solares da minha proposta são de qualidade?",
+      "resumo": "Nem todo painel solar é igual — e o cliente raramente sabe distinguir qualidade na hora de comparar propostas. Entenda o que é Tier 1, quais certificações exigir e quais perguntas fazer antes de assinar qualquer contrato.",
+      "conteudo": "<p>Você recebeu duas propostas de energia solar com preços bem diferentes. Os painéis de uma custam menos, mas o vendedor garante que são \"de boa qualidade\". Como saber se isso é verdade? O painel solar é o componente mais importante do sistema — e também o mais fácil de ser trocado por algo inferior sem que o cliente perceba.</p> <p>Veja o que realmente importa na hora de avaliar a qualidade de um painel solar.</p> <h2>O que é classificação Tier 1</h2> <p>O mercado fotovoltaico usa uma classificação informal criada pela consultoria Bloomberg NEF que divide os fabricantes de painéis em três categorias: Tier 1, Tier 2 e Tier 3.</p> <p>Fabricantes <strong>Tier 1</strong> são aqueles que passaram por uma avaliação rigorosa de capacidade financeira, histórico de produção, controle de qualidade e bankability — ou seja, são aceitos como garantia por bancos e financeiras para aprovação de projetos. Não é uma certificação de qualidade técnica do produto em si, mas é um indicador sólido de que o fabricante tem estrutura para honrar garantias de 25 anos.</p> <p>Fabricantes Tier 2 e Tier 3 são menos conhecidos, com histórico mais curto ou capacidade financeira menor. Isso não significa que o produto é necessariamente ruim — mas significa que o risco de a empresa não existir mais quando você precisar acionar a garantia é muito maior.</p> <h2>Quais certificações o painel deve ter</h2> <p>Painéis de qualidade possuem certificações internacionais que atestam que o produto foi testado em laboratório independente. As principais que você deve exigir:</p> <p><strong>IEC 61215</strong> — certifica que o painel suporta as condições climáticas para as quais foi projetado, incluindo variações de temperatura e carga mecânica.</p> <p><strong>IEC 61730</strong> — certifica a segurança elétrica do módulo.</p> <p><strong>IEC 61701</strong> — certifica resistência à névoa salina, essencial para instalações no litoral como Natal e toda a faixa costeira do RN.</p> <p>Essas certificações precisam estar no datasheet do painel — documento técnico que o instalador deve fornecer antes da assinatura do contrato.</p> <h2>O que avaliar nas garantias</h2> <p>Todo painel solar de qualidade oferece dois tipos de garantia:</p> <p><strong>Garantia de produto</strong> — cobre defeitos de fabricação. Fabricantes Tier 1 oferecem geralmente 12 anos. Fuja de propostas com garantia de produto inferior a 10 anos.</p> <p><strong>Garantia de performance</strong> — garante que o painel vai manter um percentual mínimo de eficiência ao longo do tempo. O padrão do mercado é 80% da potência original após 25 anos. Verifique se essa curva de degradação está descrita claramente no contrato ou no datasheet.</p> <h2>Marcas reconhecidas no mercado</h2> <p>Algumas fabricantes Tier 1 já têm presença consolidada no Brasil, com suporte no país e histórico comprovado. Não são as únicas opções de qualidade, mas são referências conhecidas — e isso facilita conferir garantia e assistência técnica antes de assinar.</p> <p>Se o vendedor citar uma marca que você nunca ouviu falar, pesquise antes de aceitar. Uma busca simples pelo nome do fabricante já mostra se ele tem presença real no mercado brasileiro.</p> <h2>O que perguntar ao instalador</h2> <p>Antes de assinar qualquer proposta, faça essas perguntas diretamente:</p> <p>— Qual o fabricante e o modelo exato do painel?<br> — O fabricante é Tier 1?<br> — Quais certificações o painel possui?<br> — Qual a garantia de produto e de performance?<br> — O datasheet do painel pode ser fornecido antes da assinatura?</p> <p>Uma empresa séria responde tudo isso sem hesitar. Se houver evasão ou resistência em fornecer o datasheet, é um sinal de alerta.</p> <p>Na <a href=\"https://www.confianceenergy.com\" target=\"_blank\">Confiance Energy</a>, trabalhamos exclusivamente com equipamentos Tier 1 em todas as instalações — e fornecemos o datasheet completo de todos os componentes antes da assinatura do contrato. Fale com nossa equipe e compare com transparência.</p>",
+      "categoria": "dicas",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/como-saber-se-os-paineis-solares-da-minha-proposta-sao-de-qualidade--28.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "03 de set. de 2026"
+    },
+    {
       "id": 27,
       "slug": "o-que-sao-kwh-kwp-e-kw-e-o-que-representam-na-sua-proposta-de-energia-solar--27",
       "titulo": "O que são kWh, kWp e kW e o que representam na sua proposta de energia solar",
@@ -325,5 +337,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-08-21T13:31:01.943Z"
+  "atualizadoEm": "2026-09-03T16:59:55.339Z"
 }
