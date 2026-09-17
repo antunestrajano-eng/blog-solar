@@ -5,8 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Confiance Energy — Blog Solar</title>
-<meta name="description" content="Notícias, informativos e dicas sobre energia solar. Conteúdo especializado da Confiance Energy.">
+<title>Blog Solar — Energia solar em Natal/RN | Confiance Energy</title>
+<meta name="description" content="Notícias, informativos e dicas sobre energia solar em Natal, RN e todo o Nordeste. Conteúdo especializado da Confiance Energy.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://blog.confianceenergy.com/">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 
@@ -24,8 +26,8 @@
 <!-- Open Graph / WhatsApp / Instagram -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Confiance Energy — Blog Solar">
-<meta property="og:title" content="Confiance Energy — Blog Solar">
-<meta property="og:description" content="Notícias, informativos e dicas sobre energia solar. Conteúdo especializado da Confiance Energy.">
+<meta property="og:title" content="Blog Solar — Energia solar em Natal/RN | Confiance Energy">
+<meta property="og:description" content="Notícias, informativos e dicas sobre energia solar em Natal, RN e todo o Nordeste. Conteúdo especializado da Confiance Energy.">
 <meta property="og:image" content="https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -134,6 +136,23 @@
   }
   .header-cta:hover { background: var(--blue-light); }
 
+  .header-links { display: flex; align-items: center; gap: 10px; }
+
+  .header-site {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    padding: 8px 14px;
+    border-radius: 7px;
+    white-space: nowrap;
+  }
+  .header-site:hover { color: var(--blue); border-color: var(--blue); }
+
+  footer a { color: var(--gold-light); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
   /* ── HERO STRIP ── */
   .hero {
     background: linear-gradient(135deg, var(--blue) 0%, #0F2660 100%);
@@ -231,6 +250,8 @@
     align-items: center;
     gap: 8px;
     white-space: nowrap;
+    text-decoration: none;
+    font-family: inherit;
   }
 
   .tab:hover { color: var(--blue); }
@@ -295,6 +316,9 @@
 
   /* ── CARD ── */
   .card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: var(--white);
     border-radius: var(--radius);
     overflow: hidden;
@@ -622,6 +646,7 @@
 
     .header-inner { padding: 0 12px; }
     .header-cta { padding: 8px 12px; font-size: 11px; white-space: nowrap; }
+    .header-site { display: none; }
     .logo img { height: 32px; }
     .logo-text span { font-size: 10px; }
 
@@ -693,13 +718,16 @@
 <!-- HEADER -->
 <header>
   <div class="header-inner">
-    <a class="logo" href="#" onclick="showList(); return false;">
+    <a class="logo" href="/">
       <img src="https://i.imgur.com/jbGhPDi.jpg" alt="Confiance Energy" width="44" height="44" style="height:44px;width:auto;object-fit:contain;" fetchpriority="high">
       <div class="logo-text">
         <span style="font-size:12px;font-weight:600;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Blog Solar</span>
       </div>
     </a>
-    <a class="header-cta" href="https://wa.me/5584991465777" target="_blank">Solicitar Orçamento</a>
+    <div class="header-links">
+      <a class="header-site" href="https://confianceenergy.com/" title="Confiance Energy — energia solar em Natal/RN">Site Confiance Energy</a>
+      <a class="header-cta" href="https://wa.me/5584991465777" target="_blank" rel="noopener">Solicitar Orçamento</a>
+    </div>
   </div>
 </header>
 
@@ -711,17 +739,17 @@
 
 <!-- TABS -->
 <div class="tabs-wrap" id="tabs-section">
-  <div class="tabs">
-    <button class="tab active" onclick="switchTab('noticias', this)">
+  <nav class="tabs" aria-label="Categorias">
+    <a class="tab active" href="/p/noticias/" data-tab="noticias" onclick="switchTab('noticias', this); return false;">
       📰 Notícias <span class="tab-count" id="count-noticias">0</span>
-    </button>
-    <button class="tab" onclick="switchTab('informativos', this)">
+    </a>
+    <a class="tab" href="/p/informativos/" data-tab="informativos" onclick="switchTab('informativos', this); return false;">
       💡 Informativos <span class="tab-count" id="count-informativos">0</span>
-    </button>
-    <button class="tab" onclick="switchTab('dicas', this)">
+    </a>
+    <a class="tab" href="/p/dicas/" data-tab="dicas" onclick="switchTab('dicas', this); return false;">
       💡 Dicas <span class="tab-count" id="count-dicas">0</span>
-    </button>
-  </div>
+    </a>
+  </nav>
 </div>
 
 <!-- MAIN -->
@@ -799,7 +827,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <strong>Confiance Energy</strong> — Blog Solar &nbsp;·&nbsp; Natal, RN &nbsp;·&nbsp; © 2025
+  <strong>Confiance Energy</strong> — Blog Solar &nbsp;·&nbsp; Natal, RN &nbsp;·&nbsp; © 2026<br>
+  <a href="https://confianceenergy.com/">Energia solar em Natal/RN — Confiance Energy</a>
 </footer>
 
 <script>
@@ -908,10 +937,10 @@ function renderCards() {
   const grid = document.getElementById('cards-grid');
 
   lote.forEach((p, i) => {
-    const div = document.createElement('div');
+    const div = document.createElement('a');
     div.className = 'card';
+    div.href = urlDoPost(p);
     div.style.animationDelay = (i * 0.07 + 0.05) + 's';
-    div.onclick = () => openPost(p.id);
     div.innerHTML = `
       ${p.imagem && p.imagem.trim() !== ''
         ? `<img src="${p.imagem}" alt="${p.titulo}" class="card-img" loading="lazy" decoding="async" width="600" height="200">`
@@ -971,13 +1000,16 @@ function gerarSlug(titulo) {
     .substring(0, 80);
 }
 
+function urlDoPost(p) {
+  const slug = p.slug || (gerarSlug(p.titulo) + '--' + p.id);
+  return '/p/' + p.categoria + '/' + slug + '.html';
+}
+
 function openPost(id) {
   const p = POSTS.find(x => x.id === id);
   if (!p) return;
   // Redireciona para a página estática — URL real, indexável pelo Google
-  const slug = p.slug || (gerarSlug(p.titulo) + '--' + p.id);
-  const url = '/p/' + p.categoria + '/' + slug + '.html';
-  window.location.href = url;
+  window.location.href = urlDoPost(p);
 }
 
 // Botão voltar do browser
@@ -998,8 +1030,7 @@ window.addEventListener('popstate', (e) => {
   if (aba && ['noticias','informativos','dicas'].includes(aba)) {
     currentTab = aba;
     document.querySelectorAll('.tab').forEach(t => {
-      const tabName = t.getAttribute('onclick').match(/'([^']+)'/)?.[1];
-      if (tabName === aba) t.classList.add('active');
+      if (t.dataset.tab === aba) t.classList.add('active');
       else t.classList.remove('active');
     });
     // Limpa o parâmetro da URL sem recarregar
