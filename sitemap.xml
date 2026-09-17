@@ -9,6 +9,25 @@
   </url>
 
   <url>
+    <loc>https://blog.confianceenergy.com/p/noticias/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/p/informativos/</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.confianceenergy.com/p/dicas/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://blog.confianceenergy.com/p/noticias/bandeira-tarifaria-amarela-em-setembro-o-que-e-e-por-que-quem-tem-energia-solar---29.html</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
