@@ -4,17 +4,13 @@
 //  v2.1 — SEO: links rastreáveis, páginas de categoria,
 //         datas ISO 8601, links para o site principal sem www
 // ============================================================
-//
-//  SEGURANÇA: o token do GitHub NÃO fica neste arquivo.
-//  No editor do Apps Script: Configurações do projeto →
-//  Propriedades do script → adicionar GITHUB_TOKEN = ghp_...
-// ============================================================
 
 const CONFIG = {
   GITHUB_USER:   'antunestrajano-eng',
   GITHUB_REPO:   'blog-solar',
   GITHUB_BRANCH: 'main',
   JSON_PATH:     'dados.json',
+  GITHUB_TOKEN:  'COLE_SEU_TOKEN_AQUI',
   SITE_URL:      'https://blog.confianceenergy.com',
   SITE_PRINCIPAL: 'https://confianceenergy.com',
   OG_IMAGE_PADRAO: 'https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/og-image.jpg',
@@ -34,12 +30,6 @@ const CATEGORIAS = {
                   titulo: 'Dicas de energia solar',
                   descricao: 'Dicas práticas de manutenção, economia, financiamento e cuidados com seu sistema de energia solar.' },
 };
-
-function getToken() {
-  const token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
-  if (!token) throw new Error('GITHUB_TOKEN não configurado em Propriedades do script.');
-  return token;
-}
 
 // ============================================================
 //  PUBLICAR — lê a planilha, envia dados.json e gera HTMLs
@@ -542,7 +532,7 @@ function detectarExtensao(url) {
 }
 
 function enviarArquivoBinario(path, base64) {
-  const token = getToken();
+  const token = CONFIG.GITHUB_TOKEN;
   const url   = `https://api.github.com/repos/${CONFIG.GITHUB_USER}/${CONFIG.GITHUB_REPO}/contents/${path}`;
   let sha = null;
   try {
@@ -608,7 +598,7 @@ function regenerarTodasAsPaginas() {
 // ============================================================
 
 function enviarArquivo(path, conteudo) {
-  const token = getToken();
+  const token = CONFIG.GITHUB_TOKEN;
   const url   = `https://api.github.com/repos/${CONFIG.GITHUB_USER}/${CONFIG.GITHUB_REPO}/contents/${path}`;
   let sha = null;
   try {
