@@ -3,14 +3,14 @@
 
   <url>
     <loc>https://blog.confianceenergy.com/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://blog.confianceenergy.com/p/noticias/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -27,6 +27,12 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://blog.confianceenergy.com/p/noticias/aneel-eleva-projecao-de-alta-das-tarifas-para-94-em-2026-o-que-muda-para-o-consu--30.html</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
   <url>
     <loc>https://blog.confianceenergy.com/p/noticias/bandeira-tarifaria-amarela-em-setembro-o-que-e-e-por-que-quem-tem-energia-solar---29.html</loc>
     <lastmod>2026-09-17</lastmod>
