@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 30,
+      "slug": "aneel-eleva-projecao-de-alta-das-tarifas-para-94-em-2026-o-que-muda-para-o-consu--30",
+      "titulo": "ANEEL eleva projeção de alta das tarifas para 9,4% em 2026: o que muda para o consumidor da Cosern",
+      "resumo": "A ANEEL revisou pela segunda vez em 2026 a projeção de aumento das tarifas de energia, agora em 9,4% — quase o dobro da inflação. Entenda os motivos e por que quem tem energia solar no RN sente muito menos esse impacto.",
+      "conteudo": "<p>A ANEEL (Agência Nacional de Energia Elétrica) elevou pela segunda vez em 2026 a projeção de aumento médio das tarifas de energia elétrica no país. A nova estimativa é de <strong>9,4%</strong> — ante os 8,6% projetados em junho e os 8% estimados no início do ano. O número é quase o dobro da inflação oficial projetada para 2026, de 5% pelo IPCA.</p> <p>Para os consumidores da Cosern no Rio Grande do Norte, o recado é direto: a tendência de alta nas tarifas não é passageira, e quem ainda depende integralmente da rede elétrica vai continuar sentindo esse movimento na fatura.</p> <h2>Por que a projeção subiu</h2> <p>Segundo o boletim InfoTarifas da ANEEL, a principal pressão vem dos componentes financeiros, que respondem por 4,7 pontos percentuais do efeito tarifário projetado. Entre eles está a CVA Energia — mecanismo que compensa diferenças entre os custos de compra de energia previstos nas tarifas e os valores efetivamente realizados. Esse componente piorou significativamente em relação à estimativa de março, passando de 1,3% para 3,5%, puxado por um regime hidrológico mais desfavorável.</p> <p>Também pesam os encargos setoriais (1,6 ponto percentual), a compra de energia (1,1), os custos de transmissão (0,9) e de distribuição (0,8). A tarifa residencial B1 — a que a maioria dos consumidores paga — já chegou a R$ 998 por MWh em 2026, antes da incidência de tributos como ICMS e PIS/Cofins.</p> <h2>A projeção é uma média — e algumas regiões vão pagar mais</h2> <p>O percentual de 9,4% é um efeito tarifário médio nacional. O boletim da ANEEL aponta que 16% do mercado está em concessões com efeito médio projetado de 17,6%, enquanto apenas 5% está em áreas com impacto inferior a 1%. Cada distribuidora tem seu próprio processo tarifário — o que significa que o resultado varia conforme a região.</p> <p>A Cosern, distribuidora responsável pelo fornecimento de energia em todo o Rio Grande do Norte, tem seu próprio ciclo de reajuste. O que o cenário nacional mostra é que a pressão sobre as tarifas é estrutural e não deve diminuir no curto prazo.</p> <h2>O que isso significa para o consumidor do RN</h2> <p>Uma conta de R$ 400 que subir 9,4% passa a R$ 437,60. Uma de R$ 600 vai para R$ 656,40. E esse reajuste se aplica sobre o novo valor no ciclo seguinte — o efeito composto dos aumentos anuais é o que mais pesa no longo prazo.</p> <p>Além da projeção para este ano, a ANEEL destaca que novos encargos de reserva de capacidade devem elevar os custos ainda mais ao longo de 2027, com impacto mensal superando R$ 1 bilhão — valores que serão repassados ao consumidor final.</p> <h2>Quem tem energia solar sente menos</h2> <p>O reajuste tarifário incide sobre a energia consumida da rede da Cosern. Quem tem sistema solar reduz esse consumo drasticamente — e, consequentemente, a base sobre a qual o percentual é aplicado.</p> <p>Um consumidor que antes pagava R$ 500 à Cosern e passou a pagar R$ 80 de fatura mínima após instalar energia solar recebe um reajuste de 9,4% sobre R$ 80, não sobre os R$ 500. A diferença é de R$ 7,52 contra R$ 47,00 de impacto mensal — e esse benefício se repete em cada novo ciclo de reajuste, ano após ano.</p> <p>Quanto mais a tarifa sobe, maior a proteção de quem já saiu da dependência da rede.</p> <p>Na <a href=\"https://confianceenergy.com\" target=\"_blank\">Confiance Energy</a>, calculamos exatamente quanto você deixaria de pagar à Cosern com um sistema solar dimensionado para o seu consumo. Fale com nossa equipe em Natal e descubra o impacto real no seu bolso.</p>",
+      "categoria": "noticias",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/aneel-eleva-projecao-de-alta-das-tarifas-para-94-em-2026-o-que-muda-para-o-consu--30.png",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "21 de set. de 2026"
+    },
+    {
       "id": 29,
       "slug": "bandeira-tarifaria-amarela-em-setembro-o-que-e-e-por-que-quem-tem-energia-solar---29",
       "titulo": "Bandeira tarifária amarela em setembro: o que é e por que quem tem energia solar sente menos",
@@ -349,5 +361,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-09-17T14:40:06.953Z"
+  "atualizadoEm": "2026-09-21T19:51:09.877Z"
 }
