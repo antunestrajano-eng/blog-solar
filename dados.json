@@ -1,6 +1,18 @@
 {
   "posts": [
     {
+      "id": 34,
+      "slug": "como-saber-quantas-placas-cabem-no-meu-telhado--34",
+      "titulo": "Como saber quantas placas cabem no meu telhado?",
+      "resumo": "Dividir a área do telhado pelo tamanho da placa dá um número maior do que o que realmente cabe. Veja como medir, descontar bordas e obstáculos e por que, na maioria das casas, o limite é a conta de luz.",
+      "conteudo": "<p>Na visita técnica, uma das primeiras perguntas é quantas placas cabem no telhado. A conta que circula na internet — área do telhado dividida pela área da placa — quase sempre entrega um número maior do que o que a instalação comporta. Placa tem medida fixa, telhado tem beiral, cumeeira, caixa d'água e uma faixa nas bordas que não se ocupa.</p> <h2>Meça cada água, não o telhado inteiro</h2> <p>Telhado residencial quase nunca é uma superfície só. São duas ou mais águas, com caimentos diferentes, e cada uma recebe o seu próprio arranjo. Some as áreas no fim, depois de contar o que cabe em cada uma. Uma água estreita perde proporcionalmente mais espaço com as folgas das bordas do que uma água larga.</p> <p>Dá para ter uma primeira noção com trena, medindo a largura no beiral e o comprimento no caimento. Imagem de satélite serve como estimativa. A medida que vale para o projeto é a da visita, porque ela também vê estrutura, telha e o que faz sombra.</p> <h2>Desconte o que não recebe placa</h2> <p>Nas bordas fica uma faixa livre, de algumas dezenas de centímetros, para o vento não pegar o módulo no limite da telha e para haver acesso na manutenção. Entram nessa conta também a cumeeira, calhas, chaminés, antenas, claraboias e a caixa d'água. Sombra permanente — árvore, prédio vizinho, a própria caixa — tira área útil mesmo que o espaço físico exista: placa à sombra o dia inteiro não entra no arranjo.</p> <h2>A placa entra por medida, não por área</h2> <p>Um módulo comum de cerca de 550 watts mede em torno de <strong>2,28 m por 1,13 m</strong>, pouco mais de 2,5 m². Ele pode deitar no telhado de dois jeitos, e a quantidade muda.</p> <p>Tome uma água de 10 m de beiral por 4,5 m de caimento, 45 m². Tirando 30 cm de cada borda, sobram 9,4 m por 3,9 m. Com a placa deitada no sentido da largura, cabem 4 por fileira e 3 fileiras: <strong>12 placas</strong>. Em pé, no outro sentido, a mesma água leva 8. A divisão crua, 45 dividido por 2,5, sugeria 17. Essas cinco a mais não existem no telhado.</p> <p>Por isso duas propostas para a mesma casa podem indicar quantidades diferentes sem que uma esteja errada: a posição do módulo e o desenho de cada água mudam o encaixe.</p> <h2>Laje comporta menos do que a área sugere</h2> <p>Em telhado inclinado, as placas acompanham a água e ficam próximas umas das outras. Na laje, elas precisam de estrutura própria e de espaço entre as fileiras, para a fileira da frente não fazer sombra na de trás. A mesma metragem recebe menos módulos do que uma água de telha cerâmica.</p> <h2>O número que importa é o da conta de luz</h2> <p>Na maior parte das casas, o telhado comporta mais placas do que o consumo pede. O projeto parte dos kWh da fatura da Cosern. Se a conta pede 8 módulos e o telhado leva 14, o sistema fica em 8. Encher o telhado sem consumo correspondente joga excedente na rede: essa energia injetada entra na cobrança progressiva do Fio B e vira crédito com prazo de 60 meses.</p> <p>O caso inverso também existe. Consumo alto e telhado pequeno, muito recortado ou sombreado. Aí a visita define o máximo que cabe e o cliente vê, antes de fechar, quanto da conta esse máximo cobre.</p> <p>Na <a href=\"https://confianceenergy.com\" target=\"_blank\">Confiance Energy</a>, a contagem é feita na visita, água por água, e cruzada com a sua fatura. Fale com a nossa equipe e veja quantas placas o seu telhado comporta e quantas o seu consumo pede.</p>",
+      "categoria": "dicas",
+      "imagem": "https://raw.githubusercontent.com/antunestrajano-eng/blog-solar/main/img/como-saber-quantas-placas-cabem-no-meu-telhado--34.jpg",
+      "autor": "Redação Confiance",
+      "status": "Publicado",
+      "data": "13 de out. de 2026"
+    },
+    {
       "id": 33,
       "slug": "o-que-e-microinversor-e-quando-ele-vale-a-pena-no-seu-projeto-solar--33",
       "titulo": "O que é microinversor e quando ele vale a pena no seu projeto solar",
@@ -397,5 +409,5 @@
       "data": "23 de mar. de 2026"
     }
   ],
-  "atualizadoEm": "2026-10-07T14:26:18.759Z"
+  "atualizadoEm": "2026-10-13T19:13:57.260Z"
 }
